@@ -1,0 +1,30 @@
+{
+    "main_menu" : {
+        "profil" : {
+            "Nom" : "PROFIL",
+            "Couleur" : "#ff3131",
+            "Lien" : "/portfolio-es/profil"
+        },
+        "projects" : {
+            "Nom" : "PROJETS",
+            "Couleur" : "#ffde59",
+            "Lien" : "/portfolio-es/projets"
+        },
+        "contacts" : {
+            "Nom" : "CONTACT",
+            "Couleur" : "#38b6ff",
+            "Lien" : "/portfolio-es/contacts"
+        },
+        "partenaires" : {
+            "Nom" : "PARTENAIRES",
+            "Couleur" : "#00bf63",
+            "Lien" : "/portfolio-es/partenaire"
+        }        
+    },
+    "sous_menu" : {
+        "web" : {
+            "menu" : "PROFIL",
+            "Nom" : "WEB"
+        }
+    }
+}

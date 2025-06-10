@@ -22,9 +22,56 @@
         }        
     },
     "sous_menu" : {
+        "language" : {
+            "menu" : "PROFIL",
+            "Couleur" : "#ff3131",
+            "Nom" : "LANGUAGES"
+        },
         "web" : {
             "menu" : "PROFIL",
+            "Couleur" : "#ff3131",
+            "Nom" : "DEVELOPPEMENT WEB"
+        },
+
+        "soft_skills" : {
+            "menu" : "PROFIL",
+            "Couleur" : "#ff3131",
+            "Nom" : "SOFT SKILLS"
+        },
+        "data_analyse" : {
+            "menu" : "PROJETS",
+            "Couleur" : "#ffde59",
+            "Nom" : "DATA ANALYSE"
+        },
+        "data_science" : {
+            "menu" : "PROJETS",
+            "Couleur" : "#ffde59",
+            "Nom" : "DATA SCIENCE"
+        },
+        "web_dev" : {
+            "menu" : "PROJETS",
+            "Couleur" : "#ffde59",
             "Nom" : "WEB"
+        }        
+    },
+    "certifications" : {
+        "certifications_js" : {
+            "Sous_menu" : "LANGUAGES",
+            "Nom" : "JAVASCRIP : La Formation ULTIME",
+            "Couleur_basse" : "#d58af8",
+            "Couleur_haute" : "#b916f4",
+            "Image_src" : "media/images/udemy-logo.png",
+            "Description" : "15 H - Formation de base sur le langage JavaScript",
+            "lien_certification":"https://www.udemy.com/certificate/UC-3b9f06f8-f83d-43a3-8d5d-cb79f901a25e/"
+        },
+        "certification_mysql" : {
+            "Sous_menu" : "LANGUAGES",
+            "Nom" : "The Ultimate MySQL Bootcamp",
+            "Couleur_basse" : "#d58af8",
+            "Couleur_haute" : "#b916f4",
+            "Image_src" : "media/images/udemy-logo.png",
+            "Description" : "38 H - Formation Complète MySQL / SQL",
+            "lien_certification" : "https://www.udemy.com/certificate/UC-f702561d-cfa8-42fb-9785-a8b8fb08c9c7/"
         }
     }
 }

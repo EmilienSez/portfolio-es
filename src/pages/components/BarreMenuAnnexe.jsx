@@ -1,13 +1,11 @@
 import paramsData from '../../assets/data/params.json'
 import SousMenuAnnexe from './SousMenuAnnexe';
-import { useEffect, useState } from 'react';
+
 import { Link } from 'react-router-dom';
 
-export default function BarreMenuAnnexe({ nom, couleur, link, type_menu, sous_menu }) {
-  const [activeItem, setActiveItem] = useState(sous_menu);
+export default function BarreMenuAnnexe({ nom, couleur, link, type_menu, activeItem, onSousMenuClick }) {
+  // const [activeItem, setActiveItem] = useState(sous_menu);
   const profilItems = Object.entries(paramsData.sous_menu).filter(([key, value]) => value.menu === type_menu);
-  // console.log(profilItems);
-
   return (
     <div>
       <Link to={link}>
@@ -21,7 +19,7 @@ export default function BarreMenuAnnexe({ nom, couleur, link, type_menu, sous_me
           nom={value.Nom}
           couleur={value.Couleur}
           isActive={activeItem === value.Nom}
-          onActivate={() => setActiveItem(value.Nom)} />
+          onActivate={() => onSousMenuClick(value.Nom)} />
       )) : null}
     </div>
   );

@@ -1,77 +1,202 @@
 {
-    "main_menu" : {
-        "profil" : {
-            "Nom" : "PROFIL",
-            "Couleur" : "#ff3131",
-            "Lien" : "/portfolio-es/profil"
+    "main_menu": {
+        "profil": {
+            "Nom": "PROFIL",
+            "Couleur": "#ff3131",
+            "Lien": "/portfolio-es/profil"
         },
-        "projects" : {
-            "Nom" : "PROJETS",
-            "Couleur" : "#ffde59",
-            "Lien" : "/portfolio-es/projets"
+        "projects": {
+            "Nom": "PROJETS",
+            "Couleur": "#ffde59",
+            "Lien": "/portfolio-es/projets"
         },
-        "contacts" : {
-            "Nom" : "CONTACT",
-            "Couleur" : "#38b6ff",
-            "Lien" : "/portfolio-es/contacts"
+        "contacts": {
+            "Nom": "CONTACT",
+            "Couleur": "#38b6ff",
+            "Lien": "/portfolio-es/contacts"
         },
-        "partenaires" : {
-            "Nom" : "PARTENAIRES",
-            "Couleur" : "#00bf63",
-            "Lien" : "/portfolio-es/partenaire"
-        }        
-    },
-    "sous_menu" : {
-        "language" : {
-            "menu" : "PROFIL",
-            "Couleur" : "#ff3131",
-            "Nom" : "LANGUAGES"
-        },
-        "web" : {
-            "menu" : "PROFIL",
-            "Couleur" : "#ff3131",
-            "Nom" : "DEVELOPPEMENT WEB"
-        },
-
-        "soft_skills" : {
-            "menu" : "PROFIL",
-            "Couleur" : "#ff3131",
-            "Nom" : "SOFT SKILLS"
-        },
-        "data_analyse" : {
-            "menu" : "PROJETS",
-            "Couleur" : "#ffde59",
-            "Nom" : "DATA ANALYSE"
-        },
-        "data_science" : {
-            "menu" : "PROJETS",
-            "Couleur" : "#ffde59",
-            "Nom" : "DATA SCIENCE"
-        },
-        "web_dev" : {
-            "menu" : "PROJETS",
-            "Couleur" : "#ffde59",
-            "Nom" : "WEB"
-        }        
-    },
-    "certifications" : {
-        "certifications_js" : {
-            "Sous_menu" : "LANGUAGES",
-            "Nom" : "JAVASCRIP : La Formation ULTIME",
-            "Couleur_basse" : "#d58af8",
-            "Couleur_haute" : "#b916f4",
-            "Image_src" : "media/images/udemy-logo.png",
-            "Description" : "15 H - Formation de base sur le langage JavaScript",
-            "lien_certification":"https://www.udemy.com/certificate/UC-3b9f06f8-f83d-43a3-8d5d-cb79f901a25e/"
-        },
-        "certification_mysql" : {
-            "Sous_menu" : "LANGUAGES",
-            "Nom" : "The Ultimate MySQL Bootcamp",
-            "Couleur_basse" : "#d58af8",
-            "Couleur_haute" : "#b916f4",
-            "Image_src" : "media/images/udemy-logo.png",
-            "Description" : "38 H - Formation Complète MySQL / SQL",
-            "lien_certification" : "https://www.udemy.com/certificate/UC-f702561d-cfa8-42fb-9785-a8b8fb08c9c7/"
+        "partenaires": {
+            "Nom": "PARTENAIRES",
+            "Couleur": "#00bf63",
+            "Lien": "/portfolio-es/partenaire"
         }
+    },
+    "sous_menu": {
+        "language": {
+            "menu": "PROFIL",
+            "Couleur": "#ff3131",
+            "Nom": "LANGUAGES"
+        },
+        "web": {
+            "menu": "PROFIL",
+            "Couleur": "#ff3131",
+            "Nom": "DEVELOPPEMENT WEB"
+        },
+        "soft_skills": {
+            "menu": "PROFIL",
+            "Couleur": "#ff3131",
+            "Nom": "APPLICATIONS"
+        },
+        "data_analyse": {
+            "menu": "PROJETS",
+            "Couleur": "#ffde59",
+            "Nom": "DATA ANALYSE"
+        },
+        "data_science": {
+            "menu": "PROJETS",
+            "Couleur": "#ffde59",
+            "Nom": "DATA SCIENCE"
+        },
+        "web_dev": {
+            "menu": "PROJETS",
+            "Couleur": "#ffde59",
+            "Nom": "WEB"
+        }
+    },
+    "certifications": {
+        "certifications_js": {
+            "Sous_menu": "LANGUAGES",
+            "Nom": "JAVASCRIP : La Formation ULTIME",
+            "Couleur_basse": "#d58af8",
+            "Couleur_haute": "#b916f4",
+            "Image_src": "media/images/udemy-logo.png",
+            "Description": "15 H - Formation de base sur le langage JavaScript",
+            "lien_certification": "https://www.udemy.com/certificate/UC-3b9f06f8-f83d-43a3-8d5d-cb79f901a25e/",
+            "pourcentage_progression": "100%"
+        },
+        "certifications_js_dev_web": {
+            "Sous_menu": "DEVELOPPEMENT WEB",
+            "Nom": "JAVASCRIP : La Formation ULTIME",
+            "Couleur_basse": "#d58af8",
+            "Couleur_haute": "#b916f4",
+            "Image_src": "media/images/udemy-logo.png",
+            "Description": "15 H - Formation de base sur le langage JavaScript",
+            "lien_certification": "https://www.udemy.com/certificate/UC-3b9f06f8-f83d-43a3-8d5d-cb79f901a25e/",
+            "pourcentage_progression": "100%"
+        },
+        "certification_mysql": {
+            "Sous_menu": "LANGUAGES",
+            "Nom": "The Ultimate MySQL Bootcamp",
+            "Couleur_basse": "#d58af8",
+            "Couleur_haute": "#b916f4",
+            "Image_src": "media/images/udemy-logo.png",
+            "Description": "38 H - Formation Complète MySQL / SQL",
+            "lien_certification": "https://www.udemy.com/certificate/UC-f702561d-cfa8-42fb-9785-a8b8fb08c9c7/",
+            "pourcentage_progression": "100%"
+        },
+        "certification_microstrategy": {
+            "Sous_menu": "APPLICATIONS",
+            "Nom": "Departmental Analyst Certification",
+            "Couleur_basse": "#ff5757",
+            "Couleur_haute": "#d8222e",
+            "Image_src": "media/images/microstrategy-logo.png",
+            "Description": "15 H - Formation sur l'outil BI Microstrategy",
+            "lien_certification": "https://drive.google.com/file/d/1TdgEoTqbdZTtxQuAfqGGymW0QQLuDNuV/view",
+            "pourcentage_progression": "100%"
+        },
+        "certification_alterix": {
+            "Sous_menu": "APPLICATIONS",
+            "Nom": "Alteryx Bootcamp",
+            "Couleur_basse": "#d58af8",
+            "Couleur_haute": "#b916f4",
+            "Image_src": "media/images/udemy-logo.png",
+            "Description": "7 H - Formation sur l'outil de traitement de données Alteryx",
+            "lien_certification": "https://www.udemy.com/certificate/UC-206729f5-df0a-45aa-9118-8d02a8b5e2d5/?utm_medium=email&utm_campaign=email&utm_source=sendgrid.com",
+            "pourcentage_progression": "100%"
+        },
+        "certification_alteryx-applicatif": {
+            "Sous_menu": "APPLICATIONS",
+            "Nom": "Alteryx : Real-Life Exercices",
+            "Couleur_basse": "#d58af8",
+            "Couleur_haute": "#b916f4",
+            "Image_src": "media/images/udemy-logo.png",
+            "Description": "6 H - Formation via des exemples réelle de traitement de données via Alteryx",
+            "lien_certification": "https://www.udemy.com/certificate/UC-f0a5cfd7-5f06-4601-b2b9-0ba0c3712b94/",
+            "pourcentage_progression": "100%"
+        },
+        "certification_power_bi": {
+            "Sous_menu": "APPLICATIONS",
+            "Nom": "Devenir un Expert de Power BI",
+            "Couleur_basse": "#d58af8",
+            "Couleur_haute": "#b916f4",
+            "Image_src": "media/images/udemy-logo.png",
+            "Description": "15 H - Formation sur l'outil Power BI & Power Query",
+            "lien_certification": "https://www.udemy.com/certificate/UC-baf71813-17c4-4ac1-953d-8c49d2f1a0fc/",
+            "pourcentage_progression": "100%"
+        },
+        "certification_alteryx-exam": {
+            "Sous_menu": "APPLICATIONS",
+            "Nom": "Alteryx Foundation Micro-Credential",
+            "Couleur_basse": "#a3d4f1",
+            "Couleur_haute": "#2176ff",
+            "Image_src": "media/images/alteryx-logo.png",
+            "Description": "2 H - Examen certifiant sur l'outil de traitement de données Alteryx",
+            "lien_certification": "https://community.alteryx.com/t5/user/viewprofilepage/user-id/394981",
+            "pourcentage_progression": "100%"
+        },
+        "certification_python": {
+            "Sous_menu": "LANGUAGES",
+            "Nom": "De 0 à expert Python",
+            "Couleur_basse": "#d58af8",
+            "Couleur_haute": "#b916f4",
+            "Image_src": "media/images/udemy-logo.png",
+            "Description": "77 H - Formation extrêmement complète sur le langage Python",
+            "lien_certification": "https://www.udemy.com/course/formation-complete-python/",
+            "pourcentage_progression": "94%"
+        },
+        "certification_tailwindcss": {
+            "Sous_menu": "DEVELOPPEMENT WEB",
+            "Nom": "Tailwind CSS From Scratch",
+            "Couleur_basse": "#d58af8",
+            "Couleur_haute": "#b916f4",
+            "Image_src": "media/images/udemy-logo.png",
+            "Description": "13 H - Formation sur le framework populaire Tailwind CSS avec Projet",
+            "lien_certification": "https://www.udemy.com/course/tailwind-from-scratch/",
+            "pourcentage_progression": "16%"
+        },
+        "certification_react": {
+            "Sous_menu": "DEVELOPPEMENT WEB",
+            "Nom": "React de A à Z (Hooks, Redux, Contexte inclus)",
+            "Couleur_basse": "#d58af8",
+            "Couleur_haute": "#b916f4",
+            "Image_src": "media/images/udemy-logo.png",
+            "Description": "13 H - Formation complète sur les principes de React avec Projet",
+            "lien_certification": "https://www.udemy.com/course/react-formation-complete/",
+            "pourcentage_progression": "26%"
+        },
+        "certification_oracle_sql": {
+            "Sous_menu": "LANGUAGES",
+            "Nom": "The Complete Oracle SQL Bootcamp (2025)",
+            "Couleur_basse": "#d58af8",
+            "Couleur_haute": "#b916f4",
+            "Image_src": "media/images/udemy-logo.png",
+            "Description": "39 H - Formation complète sur Oracle comme outil et SQL",
+            "lien_certification": "https://www.udemy.com/course/oracle-sql-12c-become-an-sql-developer-with-subtitle/",
+            "pourcentage_progression": "62%"
+        },
+        "certification_oracle_pl": {
+            "Sous_menu": "LANGUAGES",
+            "Nom": "The Complete PL/SQL Bootcamp",
+            "Couleur_basse": "#d58af8",
+            "Couleur_haute": "#b916f4",
+            "Image_src": "media/images/udemy-logo.png",
+            "Description": "27 H - Formation complète aux PL/SQL (Package, Ordonnanceur, Procedure...)",
+            "lien_certification": "https://www.udemy.com/course/plsql-beginner-to-advanced-become-a-perfect-plsql-developer/",
+            "pourcentage_progression": "69%"
+        }
+    },
+    "stack_technique" : {
+        "python" : {
+            "Sous_menu": "LANGUAGES",
+            "Nom": "Python",
+            "Logo_src" : "media/images/udemy-logo.png",
+            "Note" : 90
+        },
+        "sql" : {
+            "Sous_menu": "LANGUAGES",
+            "Nom": "SQL",
+            "Logo_src" : "media/images/alteryx-logo.png",
+            "Note" : 95
+        }        
     }
 }

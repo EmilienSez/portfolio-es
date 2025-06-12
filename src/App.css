@@ -1,3 +1,4 @@
+/* Lancer tailwind : -	npx @tailwindcss/cli -i ./src/App.css -o ./src/output.css --watch */
 @import "tailwindcss"; 
 
 @font-face {

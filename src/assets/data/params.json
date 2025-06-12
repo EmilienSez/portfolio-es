@@ -189,14 +189,116 @@
         "python" : {
             "Sous_menu": "LANGUAGES",
             "Nom": "Python",
-            "Logo_src" : "media/images/udemy-logo.png",
-            "Note" : 90
+            "Logo_src" : "media/images/python-logo.svg",
+            "Note" : 80
         },
         "sql" : {
             "Sous_menu": "LANGUAGES",
-            "Nom": "SQL",
-            "Logo_src" : "media/images/alteryx-logo.png",
+            "Nom": "PL/SQL",
+            "Logo_src" : "media/images/sql-logo.png",
             "Note" : 95
-        }        
+        },
+        "js" : {
+            "Sous_menu": "LANGUAGES",
+            "Nom": "JavaScript",
+            "Logo_src" : "media/images/javascript-logo.png",
+            "Note" : 70
+        },
+        "html" : {
+            "Sous_menu": "LANGUAGES",
+            "Nom": "HTML",
+            "Logo_src" : "media/images/html-logo.png",
+            "Note" : 60
+        },
+        "css" : {
+            "Sous_menu": "LANGUAGES",
+            "Nom": "CSS",
+            "Logo_src" : "media/images/css-logo.png",
+            "Note" : 65
+        },
+        "rstudio" : {
+            "Sous_menu": "LANGUAGES",
+            "Nom": "R",
+            "Logo_src" : "media/images/r-logo.png",
+            "Note" : 50
+        },
+        "powerquery" : {
+            "Sous_menu": "LANGUAGES",
+            "Nom": "PowerQuery",
+            "Logo_src" : "media/images/power-query-logo.png",
+            "Note" : 80
+        },
+        "dax" : {
+            "Sous_menu": "LANGUAGES",
+            "Nom": "DAX",
+            "Logo_src" : "media/images/dax-logo.png",
+            "Note" : 80
+        },
+        "sas" : {
+            "Sous_menu": "LANGUAGES",
+            "Nom": "SAS",
+            "Logo_src" : "media/images/sas-logo.png",
+            "Note" : 40
+        },
+        "react" : {
+            "Sous_menu": "DEVELOPPEMENT WEB",
+            "Nom": "React",
+            "Logo_src" : "media/images/react-logo.png",
+            "Note" : 80
+        },
+        "tailwindCSS" : {
+            "Sous_menu": "DEVELOPPEMENT WEB",
+            "Nom": "TailWind CSS",
+            "Logo_src" : "media/images/tailwindcss-logo.png",
+            "Note" : 90
+        },
+        "django" : {
+            "Sous_menu": "DEVELOPPEMENT WEB",
+            "Nom": "Django",
+            "Logo_src" : "media/images/django-logo.png",
+            "Note" : 60
+        },
+        "flask" : {
+            "Sous_menu": "DEVELOPPEMENT WEB",
+            "Nom": "Flask",
+            "Logo_src" : "media/images/flask-logo.png",
+            "Note" : 50
+        },
+        "bootstrap" : {
+            "Sous_menu": "DEVELOPPEMENT WEB",
+            "Nom": "Bootstrap",
+            "Logo_src" : "media/images/bootstrap-logo.png",
+            "Note" : 80
+        },
+        "power_bi" : {
+            "Sous_menu": "APPLICATIONS",
+            "Nom": "Power BI",
+            "Logo_src" : "media/images/bootstrap-logo.png",
+            "Note" : 80
+        },
+        "alteryx" : {
+            "Sous_menu": "APPLICATIONS",
+            "Nom": "Alteryx",
+            "Logo_src" : "media/images/alteryx-logo.png",
+            "Note" : 80
+        },
+        "microstrategy" : {
+            "Sous_menu": "APPLICATIONS",
+            "Nom": "Microstrategy",
+            "Logo_src" : "media/images/microstrategy-logo.png",
+            "Note" : 80
+        },
+        "oracle" : {
+            "Sous_menu": "APPLICATIONS",
+            "Nom": "Oracle",
+            "Logo_src" : "media/images/bootstrap-logo.png",
+            "Note" : 80
+        },
+        "my_sql" : {
+            "Sous_menu": "APPLICATIONS",
+            "Nom": "My SQL",
+            "Logo_src" : "media/images/bootstrap-logo.png",
+            "Note" : 80
+        }
     }
 }

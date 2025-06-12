@@ -81,8 +81,8 @@ export default function Profil() {
 
         {/* <!-- Grand rectangle final --> */}
         <div className="bg-[#f2f4f5] dark:bg-[#1a1a1a] font-oswald-700 border-3 border-[#1a1a1a] dark:border-white row-span-2 col-span-4 flex-col justify-center">
-          <h2 className="font-oswald-bold text-xl text-[#1a1a1a] text-center p-2 border-b-3">STACK TECHNIQUE - {sous_menu}</h2>
-          <div className="flex flex-row items-center space-x-6">
+          <h2 className="font-oswald-bold text-xl text-[#1a1a1a] text-center p-2 border-b-3 dark:text-white">STACK TECHNIQUE - {sous_menu}</h2>
+          <div className="flex flex-row items-center space-x-6 overflow-x-auto">
             {dataStackTech.map(([key, value]) => (
                 <ComposantStackTech
                   key={key}

@@ -40,17 +40,17 @@
         "data_analyse": {
             "menu": "PROJETS",
             "Couleur": "#ffde59",
-            "Nom": "DATA ANALYSE"
-        },
-        "data_science": {
-            "menu": "PROJETS",
-            "Couleur": "#ffde59",
-            "Nom": "DATA SCIENCE"
+            "Nom": "DATA"
         },
         "web_dev": {
             "menu": "PROJETS",
             "Couleur": "#ffde59",
             "Nom": "WEB"
+        },
+        "fac": {
+            "menu": "PROJETS",
+            "Couleur": "#ffde59",
+            "Nom": "UNIVERSITAIRE"
         }
     },
     "certifications": {
@@ -190,115 +190,141 @@
             "Sous_menu": "LANGUAGES",
             "Nom": "Python",
             "Logo_src" : "media/images/python-logo.svg",
-            "Note" : 80
+            "Note" : 80,
+            "rounded" : false
         },
         "sql" : {
             "Sous_menu": "LANGUAGES",
             "Nom": "PL/SQL",
             "Logo_src" : "media/images/sql-logo.png",
-            "Note" : 95
+            "Note" : 95,
+            "rounded" : false
         },
         "js" : {
             "Sous_menu": "LANGUAGES",
             "Nom": "JavaScript",
             "Logo_src" : "media/images/javascript-logo.png",
-            "Note" : 70
+            "Note" : 70,
+            "rounded" : false
         },
         "html" : {
             "Sous_menu": "LANGUAGES",
             "Nom": "HTML",
             "Logo_src" : "media/images/html-logo.png",
-            "Note" : 60
+            "Note" : 60,
+            "rounded" : false
         },
         "css" : {
             "Sous_menu": "LANGUAGES",
             "Nom": "CSS",
             "Logo_src" : "media/images/css-logo.png",
-            "Note" : 65
+            "Note" : 65,
+            "rounded" : false
         },
         "rstudio" : {
             "Sous_menu": "LANGUAGES",
             "Nom": "R",
             "Logo_src" : "media/images/r-logo.png",
-            "Note" : 50
+            "Note" : 50,
+            "rounded" : true
         },
         "powerquery" : {
             "Sous_menu": "LANGUAGES",
             "Nom": "PowerQuery",
             "Logo_src" : "media/images/power-query-logo.png",
-            "Note" : 80
+            "Note" : 80,
+            "rounded" : false
         },
         "dax" : {
             "Sous_menu": "LANGUAGES",
             "Nom": "DAX",
             "Logo_src" : "media/images/dax-logo.png",
-            "Note" : 80
+            "Note" : 80,
+            "rounded" : false
         },
         "sas" : {
             "Sous_menu": "LANGUAGES",
             "Nom": "SAS",
             "Logo_src" : "media/images/sas-logo.png",
-            "Note" : 40
+            "Note" : 40,
+            "rounded" : false
         },
         "react" : {
             "Sous_menu": "DEVELOPPEMENT WEB",
             "Nom": "React",
             "Logo_src" : "media/images/react-logo.png",
-            "Note" : 80
+            "Note" : 80,
+            "rounded" : false
         },
         "tailwindCSS" : {
             "Sous_menu": "DEVELOPPEMENT WEB",
-            "Nom": "TailWind CSS",
+            "Nom": "TailWindCSS",
             "Logo_src" : "media/images/tailwindcss-logo.png",
-            "Note" : 90
+            "Note" : 90,
+            "rounded" : false
         },
         "django" : {
             "Sous_menu": "DEVELOPPEMENT WEB",
             "Nom": "Django",
             "Logo_src" : "media/images/django-logo.png",
-            "Note" : 60
+            "Note" : 60,
+            "rounded" : false
         },
         "flask" : {
             "Sous_menu": "DEVELOPPEMENT WEB",
             "Nom": "Flask",
             "Logo_src" : "media/images/flask-logo.png",
-            "Note" : 50
+            "Note" : 50,
+            "rounded" : false
         },
         "bootstrap" : {
             "Sous_menu": "DEVELOPPEMENT WEB",
             "Nom": "Bootstrap",
             "Logo_src" : "media/images/bootstrap-logo.png",
-            "Note" : 80
+            "Note" : 80,
+            "rounded" : false
         },
         "power_bi" : {
             "Sous_menu": "APPLICATIONS",
             "Nom": "Power BI",
-            "Logo_src" : "media/images/bootstrap-logo.png",
-            "Note" : 80
+            "Logo_src" : "media/images/power-bi-logo.png",
+            "Note" : 80,
+            "rounded" : false
         },
         "alteryx" : {
             "Sous_menu": "APPLICATIONS",
             "Nom": "Alteryx",
             "Logo_src" : "media/images/alteryx-logo.png",
-            "Note" : 80
+            "Note" : 80,
+            "rounded" : true
         },
         "microstrategy" : {
             "Sous_menu": "APPLICATIONS",
             "Nom": "Microstrategy",
             "Logo_src" : "media/images/microstrategy-logo.png",
-            "Note" : 80
+            "Note" : 80,
+            "rounded" : true
         },
         "oracle" : {
             "Sous_menu": "APPLICATIONS",
             "Nom": "Oracle",
-            "Logo_src" : "media/images/bootstrap-logo.png",
-            "Note" : 80
+            "Logo_src" : "media/images/oracle-logo.png",
+            "Note" : 80,
+            "rounded" : false
         },
         "my_sql" : {
             "Sous_menu": "APPLICATIONS",
             "Nom": "My SQL",
-            "Logo_src" : "media/images/bootstrap-logo.png",
-            "Note" : 80
+            "Logo_src" : "media/images/my-sql-logo.png",
+            "Note" : 80,
+            "rounded" : false
         }
+    },
+    "experience_pro" : {
+        "Nom" : "Chargé d'étude et pilotage Data",
+        "Entreprise" : "BATIROC PBL",
+        "Date d'entrée" : "Sep - 2023",
+        "Date de sortie" : "Jui - 2025",
+        "description" : "Mise en place de projet"
     }
 }

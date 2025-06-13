@@ -1,8 +1,8 @@
 
 import RectangleSVG from './RectangleSVG';
-import TooltipSuiveur from './TooltipSuiveur';
 import React, { useState } from "react";
-export default function ComposantStackTech({ sous_menu, nom, logo_src, note }) {
+
+export default function ComposantStackTech({ sous_menu, nom, logo_src, note, rounded, color }) {
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [visible, setVisible] = useState(false);
 
@@ -42,7 +42,7 @@ export default function ComposantStackTech({ sous_menu, nom, logo_src, note }) {
     }
 
     let largeurRectangle = 40
-
+    let longueurRectangle = 53.5
 
 
     const handleMouseMove = (e) => {
@@ -56,18 +56,18 @@ export default function ComposantStackTech({ sous_menu, nom, logo_src, note }) {
                 onMouseLeave={() => setVisible(false)}
                 onMouseMove={handleMouseMove}
             >
-                < div className="flex flex-col items-center mt-4 ml-8">
-                    <RectangleSVG fillPercentage={percentage5} width={largeurRectangle} />
-                    <RectangleSVG fillPercentage={percentage4} width={largeurRectangle} />
-                    <RectangleSVG fillPercentage={percentage3} width={largeurRectangle} />
-                    <RectangleSVG fillPercentage={percentage2} width={largeurRectangle} />
-                    <RectangleSVG fillPercentage={percentage1} width={largeurRectangle} />
+                < div className="flex flex-col items-center w-[115px] flex-shrink-0">
+                    <RectangleSVG fillPercentage={percentage5} width={largeurRectangle} height={longueurRectangle} color={color}/>
+                    <RectangleSVG fillPercentage={percentage4} width={largeurRectangle} height={longueurRectangle} color={color}/>
+                    <RectangleSVG fillPercentage={percentage3} width={largeurRectangle} height={longueurRectangle} color={color}/>
+                    <RectangleSVG fillPercentage={percentage2} width={largeurRectangle} height={longueurRectangle} color={color}/>
+                    <RectangleSVG fillPercentage={percentage1} width={largeurRectangle} height={longueurRectangle} color={color}/>
                     <p className="font-oswald-bold uppercase text-xl font-medium text-center dark:text-white">{nom}</p>
-                    <img src={logo_src} alt="Logo" className="w-14 h-14" />
+                    <img src={logo_src} alt="Logo" className={`w-14 h-14 ${rounded ? "rounded-full" : ""}`} />
                 </div >
                 {visible && (
                     <div
-                        className="font-oswald-bold absolute z-50 bg-gray-300 border text-black text-xs px-3 py-2 rounded shadow pointer-events-none"
+                        className="font-oswald-bold absolute z-50 bg-gray-300 bg-opacity-40 border text-black text-xs px-3 py-2 shadow pointer-events-none"
                         style={{
                             top: position.y + 10,
                             left: position.x + 10,

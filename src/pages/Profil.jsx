@@ -7,12 +7,12 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 export default function Profil() {
-
+  
   const type_menu = 'PROFIL';
   const sous_menu = "LANGUAGES";
 
   const [activeItem, setActiveItem] = useState(sous_menu);
-
+  const [isDark, setIsDark] = useState(false);
   useEffect(() => {
     console.log("activeItem a changé :", activeItem);
   }, [activeItem]);
@@ -42,17 +42,22 @@ export default function Profil() {
             />
           ))}
           <div className="flex flex-col justify-end h-64 items-center">
-            <DarkMode />
+            <DarkMode 
+            onThemeChange={setIsDark}/>
           </div>
         </div>
         {/* <!-- Carré en haut à droite --> */}
-        <div className="flex justify-center bg-[#f2f4f5] dark:bg-[#1a1a1a] border-3 border-[#1a1a1a] dark:border-white row-span-1 col-span-2">
-          <img src="media/images/bud.jpg" alt="" className="w-full" />
+        <div className="bg-[#f2f4f5] dark:bg-[#1a1a1a] border-3 border-[#1a1a1a] dark:border-white row-span-1 col-span-2 flex-col justify-center">
+          <h2 className="font-oswald-bold text-xl text-[#1a1a1a] text-center p-2 dark:text-white uppercase">Développeur FullStack</h2>
+          <p>Faire un petit texte qui s'écrit puis désécrit avec 3 valeur possible : Data Analyst / Data Scientist / Développeur</p>
+          <p>ici, faire une petite description simple</p>
         </div>
 
 
         {/* <!-- Rectangle en dessous du carré --> */}
         <div className="bg-[#f2f4f5] dark:bg-[#1a1a1a] border-3 border-[#1a1a1a] dark:border-white row-span-1 col-span-4 flex-col justify-center">
+          <h2 className="font-oswald-bold text-xl text-[#1a1a1a] text-center p-2 dark:text-white uppercase">Expérience professionnelle</h2>
+          <p>Même chose que pour les certification, mais avec des cartes sur allant de gauche à droite</p>
         </div>
 
         {/* <!-- Rectangle long à droite du carré --> */}
@@ -82,7 +87,7 @@ export default function Profil() {
         {/* <!-- Grand rectangle final --> */}
         <div className="bg-[#f2f4f5] dark:bg-[#1a1a1a] font-oswald-700 border-3 border-[#1a1a1a] dark:border-white row-span-2 col-span-4 flex-col justify-center">
           <h2 className="font-oswald-bold text-xl text-[#1a1a1a] text-center p-2 border-b-3 dark:text-white">STACK TECHNIQUE - {sous_menu}</h2>
-          <div className="flex flex-row items-center space-x-6 overflow-x-auto">
+          <div className="flex flex-row flex-col justify-between gap-2 items-center space-x-6 overflow-x-auto mt-2 ml-4 mr-4">
             {dataStackTech.map(([key, value]) => (
                 <ComposantStackTech
                   key={key}
@@ -90,6 +95,8 @@ export default function Profil() {
                   nom={value.Nom}
                   logo_src={value.Logo_src}
                   note={value.Note}
+                  rounded={value.rounded}
+                  color={isDark ? "#f2f4f5" : "#1a1a1a"}
                 />
               ))}
           </div>

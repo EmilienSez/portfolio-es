@@ -1,4 +1,4 @@
-const RectangleSVG = ({fillPercentage = 50, width = 35, height = 55, borderSize = 6 }) => {
+const RectangleSVG = ({fillPercentage = 50, width = 35, height = 55, borderSize = 6, color = "black" }) => {
   const clampedFill = Math.min(100, Math.max(0, fillPercentage));
   // Hauteur du remplissage
   const fillHeight = ((clampedFill / 100) * (height)) ;
@@ -13,7 +13,7 @@ const RectangleSVG = ({fillPercentage = 50, width = 35, height = 55, borderSize 
         width={width}
         height={height}
         fill="none"
-        stroke="black"
+        stroke={color}
         strokeWidth={borderSize}
       />
       {/* Remplissage contrôlé */}

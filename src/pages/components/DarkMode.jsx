@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export default function DarkMode() {
+export default function DarkMode({onThemeChange}) {
     const [isDark, setIsDark] = useState(false);
 
     useEffect(() => {
@@ -8,6 +8,7 @@ export default function DarkMode() {
         const darkPref = localStorage.getItem('theme') === 'dark';
         setIsDark(darkPref);
         document.documentElement.classList.toggle('dark', darkPref);
+        onThemeChange?.(darkPref);
     }, []);
 
     const toggleDarkMode = () => {
@@ -15,6 +16,7 @@ export default function DarkMode() {
         setIsDark(newTheme);
         document.documentElement.classList.toggle('dark', newTheme);
         localStorage.setItem('theme', newTheme ? 'dark' : 'light');
+        onThemeChange?.(newTheme);
     };
     return (
         <p id="darkModeText" className="font-oswald-bold text-2xl mt-4 flex items-center gap-2 text-[#1a1a1a] dark:text-white"

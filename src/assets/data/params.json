@@ -185,146 +185,212 @@
             "pourcentage_progression": "69%"
         }
     },
-    "stack_technique" : {
-        "python" : {
+    "stack_technique": {
+        "python": {
             "Sous_menu": "LANGUAGES",
             "Nom": "Python",
-            "Logo_src" : "media/images/python-logo.svg",
-            "Note" : 80,
-            "rounded" : false
+            "Logo_src": "media/images/python-logo.svg",
+            "Note": 80,
+            "rounded": false
         },
-        "sql" : {
+        "sql": {
             "Sous_menu": "LANGUAGES",
             "Nom": "PL/SQL",
-            "Logo_src" : "media/images/sql-logo.png",
-            "Note" : 95,
-            "rounded" : false
+            "Logo_src": "media/images/sql-logo.png",
+            "Note": 95,
+            "rounded": false
         },
-        "js" : {
+        "js": {
             "Sous_menu": "LANGUAGES",
             "Nom": "JavaScript",
-            "Logo_src" : "media/images/javascript-logo.png",
-            "Note" : 70,
-            "rounded" : false
+            "Logo_src": "media/images/javascript-logo.png",
+            "Note": 70,
+            "rounded": false
         },
-        "html" : {
+        "html": {
             "Sous_menu": "LANGUAGES",
             "Nom": "HTML",
-            "Logo_src" : "media/images/html-logo.png",
-            "Note" : 60,
-            "rounded" : false
+            "Logo_src": "media/images/html-logo.png",
+            "Note": 60,
+            "rounded": false
         },
-        "css" : {
+        "css": {
             "Sous_menu": "LANGUAGES",
             "Nom": "CSS",
-            "Logo_src" : "media/images/css-logo.png",
-            "Note" : 65,
-            "rounded" : false
+            "Logo_src": "media/images/css-logo.png",
+            "Note": 65,
+            "rounded": false
         },
-        "rstudio" : {
+        "rstudio": {
             "Sous_menu": "LANGUAGES",
             "Nom": "R",
-            "Logo_src" : "media/images/r-logo.png",
-            "Note" : 50,
-            "rounded" : true
+            "Logo_src": "media/images/r-logo.png",
+            "Note": 50,
+            "rounded": true
         },
-        "powerquery" : {
+        "powerquery": {
             "Sous_menu": "LANGUAGES",
             "Nom": "PowerQuery",
-            "Logo_src" : "media/images/power-query-logo.png",
-            "Note" : 80,
-            "rounded" : false
+            "Logo_src": "media/images/power-query-logo.png",
+            "Note": 80,
+            "rounded": false
         },
-        "dax" : {
+        "dax": {
             "Sous_menu": "LANGUAGES",
             "Nom": "DAX",
-            "Logo_src" : "media/images/dax-logo.png",
-            "Note" : 80,
-            "rounded" : false
+            "Logo_src": "media/images/dax-logo.png",
+            "Note": 80,
+            "rounded": false
         },
-        "sas" : {
+        "sas": {
             "Sous_menu": "LANGUAGES",
             "Nom": "SAS",
-            "Logo_src" : "media/images/sas-logo.png",
-            "Note" : 40,
-            "rounded" : false
+            "Logo_src": "media/images/sas-logo.png",
+            "Note": 40,
+            "rounded": false
         },
-        "react" : {
+        "react": {
             "Sous_menu": "DEVELOPPEMENT WEB",
             "Nom": "React",
-            "Logo_src" : "media/images/react-logo.png",
-            "Note" : 80,
-            "rounded" : false
+            "Logo_src": "media/images/react-logo.png",
+            "Note": 80,
+            "rounded": false
         },
-        "tailwindCSS" : {
+        "tailwindCSS": {
             "Sous_menu": "DEVELOPPEMENT WEB",
             "Nom": "TailWindCSS",
-            "Logo_src" : "media/images/tailwindcss-logo.png",
-            "Note" : 90,
-            "rounded" : false
+            "Logo_src": "media/images/tailwindcss-logo.png",
+            "Note": 90,
+            "rounded": false
         },
-        "django" : {
+        "django": {
             "Sous_menu": "DEVELOPPEMENT WEB",
             "Nom": "Django",
-            "Logo_src" : "media/images/django-logo.png",
-            "Note" : 60,
-            "rounded" : false
+            "Logo_src": "media/images/django-logo.png",
+            "Note": 60,
+            "rounded": false
         },
-        "flask" : {
+        "flask": {
             "Sous_menu": "DEVELOPPEMENT WEB",
             "Nom": "Flask",
-            "Logo_src" : "media/images/flask-logo.png",
-            "Note" : 50,
-            "rounded" : false
+            "Logo_src": "media/images/flask-logo.png",
+            "Note": 50,
+            "rounded": false
         },
-        "bootstrap" : {
+        "bootstrap": {
             "Sous_menu": "DEVELOPPEMENT WEB",
             "Nom": "Bootstrap",
-            "Logo_src" : "media/images/bootstrap-logo.png",
-            "Note" : 80,
-            "rounded" : false
+            "Logo_src": "media/images/bootstrap-logo.png",
+            "Note": 80,
+            "rounded": false
         },
-        "power_bi" : {
+        "power_bi": {
             "Sous_menu": "APPLICATIONS",
             "Nom": "Power BI",
-            "Logo_src" : "media/images/power-bi-logo.png",
-            "Note" : 80,
-            "rounded" : false
+            "Logo_src": "media/images/power-bi-logo.png",
+            "Note": 80,
+            "rounded": false
         },
-        "alteryx" : {
+        "alteryx": {
             "Sous_menu": "APPLICATIONS",
             "Nom": "Alteryx",
-            "Logo_src" : "media/images/alteryx-logo.png",
-            "Note" : 80,
-            "rounded" : true
+            "Logo_src": "media/images/alteryx-logo.png",
+            "Note": 80,
+            "rounded": true
         },
-        "microstrategy" : {
+        "microstrategy": {
             "Sous_menu": "APPLICATIONS",
             "Nom": "Microstrategy",
-            "Logo_src" : "media/images/microstrategy-logo.png",
-            "Note" : 80,
-            "rounded" : true
+            "Logo_src": "media/images/microstrategy-logo.png",
+            "Note": 80,
+            "rounded": true
         },
-        "oracle" : {
+        "oracle": {
             "Sous_menu": "APPLICATIONS",
             "Nom": "Oracle",
-            "Logo_src" : "media/images/oracle-logo.png",
-            "Note" : 80,
-            "rounded" : false
+            "Logo_src": "media/images/oracle-logo.png",
+            "Note": 80,
+            "rounded": false
         },
-        "my_sql" : {
+        "my_sql": {
             "Sous_menu": "APPLICATIONS",
             "Nom": "My SQL",
-            "Logo_src" : "media/images/my-sql-logo.png",
-            "Note" : 80,
-            "rounded" : false
+            "Logo_src": "media/images/my-sql-logo.png",
+            "Note": 80,
+            "rounded": false
         }
     },
-    "experience_pro" : {
-        "Nom" : "Chargé d'étude et pilotage Data",
-        "Entreprise" : "BATIROC PBL",
-        "Date d'entrée" : "Sep - 2023",
-        "Date de sortie" : "Jui - 2025",
-        "description" : "Mise en place de projet"
+    "experience_pro": {
+        "experience_1": {
+            "Nom": "Chargé d'étude et pilotage Data",
+            "Entreprise": "BATIROC PBL",
+            "Date d'entrée": "Sep - 2023",
+            "Date de sortie": "Jui - 2025",
+            "description": "Mise en place de projet"
+        }
+    },
+    "contact": {
+        "linkedin": {
+            "nom": "Linkedin",
+            "link": "https://www.linkedin.com/in/emilien-sezestre-26b610193/",
+            "logo": "media/images/linkedin-logo.png"
+        },
+        "github": {
+            "nom": "GitHub",
+            "link": "https://github.com/EmilienSez",
+            "logo": "media/images/github-logo.png"
+        },
+        "cv_feuille": {
+            "nom": "CV",
+            "link": "public/media/documents/CV - Sezestre Emilien 2024-2025.pdf",
+            "logo": "media/images/cv-logo.png"
+        }
+    },
+    "projets": {
+        "projet_1": {
+            "Nom": "Power BI Deezer",
+            "Sous_menu": "DATA",
+            "clickable": true,
+            "lien": "https://www.linkedin.com/posts/emilien-sezestre-26b610193_bonjour-je-suis-ravi-de-partager-mon-dernier-activity-7160889977772404737-FW9T?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC15inMB58WvAXSuboRULHajBhiNb-ZUzr8",
+            "images": [
+                "media/images/projets/projet_pbi_deezer/1.png",
+                "media/images/projets/projet_pbi_deezer/2.png",
+                "media/images/projets/projet_pbi_deezer/3.png"
+            ]
+        },
+        "projet_2": {
+            "Nom": "Estimateur prix immobilier",
+            "Sous_menu": "DATA",
+            "clickable": true,
+            "lien": "public/media/documents/Projet Machine Learning.pdf",
+            "images": [
+                "media/images/projets/estimateur_immo/1.png",
+                "media/images/projets/estimateur_immo/2.png",
+                "media/images/projets/estimateur_immo/3.png"
+            ]
+        },
+        "projet_3": {
+            "Nom": "Cartographie des risques Climatiques",
+            "Sous_menu": "WEB",
+            "clickable": true,
+            "lien": "https://emiliensez.github.io/carto-risque-clim/",
+            "images": [
+                "media/images/projets/carto_risque_clim/1.png",
+                "media/images/projets/carto_risque_clim/2.png",
+                "media/images/projets/carto_risque_clim/3.png"
+            ]
+        },
+        "projet_4": {
+            "Nom": "Site DPE",
+            "Sous_menu": "WEB",
+            "clickable": true,
+            "lien": "https://emiliensez.github.io/dpe-batiroc/",
+            "images": [
+                "media/images/projets/site_dpe/1.png",
+                "media/images/projets/site_dpe/2.png",
+                "media/images/projets/site_dpe/3.png",
+                "media/images/projets/site_dpe/4.png"
+            ]
+        }
     }
 }

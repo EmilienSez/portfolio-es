@@ -2,7 +2,7 @@
 import RectangleSVG from './RectangleSVG';
 import React, { useState } from "react";
 
-export default function ComposantStackTech({ sous_menu, nom, logo_src, note, rounded, color }) {
+export default function ComposantStackTech({ sous_menu, nom, logo_src, note, rounded, color, colorBar}) {
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [visible, setVisible] = useState(false);
 
@@ -57,11 +57,11 @@ export default function ComposantStackTech({ sous_menu, nom, logo_src, note, rou
                 onMouseMove={handleMouseMove}
             >
                 < div className="flex flex-col items-center w-[115px] flex-shrink-0">
-                    <RectangleSVG fillPercentage={percentage5} width={largeurRectangle} height={longueurRectangle} color={color}/>
-                    <RectangleSVG fillPercentage={percentage4} width={largeurRectangle} height={longueurRectangle} color={color}/>
-                    <RectangleSVG fillPercentage={percentage3} width={largeurRectangle} height={longueurRectangle} color={color}/>
-                    <RectangleSVG fillPercentage={percentage2} width={largeurRectangle} height={longueurRectangle} color={color}/>
-                    <RectangleSVG fillPercentage={percentage1} width={largeurRectangle} height={longueurRectangle} color={color}/>
+                    <RectangleSVG fillPercentage={percentage5} width={largeurRectangle} height={longueurRectangle} color={color} colorBar={colorBar}/>
+                    <RectangleSVG fillPercentage={percentage4} width={largeurRectangle} height={longueurRectangle} color={color} colorBar={colorBar}/>
+                    <RectangleSVG fillPercentage={percentage3} width={largeurRectangle} height={longueurRectangle} color={color} colorBar={colorBar}/>
+                    <RectangleSVG fillPercentage={percentage2} width={largeurRectangle} height={longueurRectangle} color={color} colorBar={colorBar}/>
+                    <RectangleSVG fillPercentage={percentage1} width={largeurRectangle} height={longueurRectangle} color={color} colorBar={colorBar}/>
                     <p className="font-oswald-bold uppercase text-xl font-medium text-center dark:text-white">{nom}</p>
                     <img src={logo_src} alt="Logo" className={`w-14 h-14 ${rounded ? "rounded-full" : ""}`} />
                 </div >

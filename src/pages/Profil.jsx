@@ -20,6 +20,7 @@ export default function Profil() {
   const annexeMenuInfo = Object.entries(paramsData.main_menu);
   const dataCertification = Object.entries(paramsData.certifications).filter(([key, value]) => value.Sous_menu === activeItem);
   const dataStackTech = Object.entries(paramsData.stack_technique).filter(([key, value]) => value.Sous_menu === activeItem);
+  const couleurPage = paramsData?.main_menu?.profil?.Couleur;
 
   console.log(dataCertification)
   return (
@@ -97,6 +98,7 @@ export default function Profil() {
                   note={value.Note}
                   rounded={value.rounded}
                   color={isDark ? "#f2f4f5" : "#1a1a1a"}
+                  colorBar={couleurPage}
                 />
               ))}
           </div>

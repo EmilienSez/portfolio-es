@@ -10,7 +10,7 @@ export default function BarreMenuAnnexe({ nom, couleur, link, type_menu, activeI
     <div>
       <Link to={link}>
       <p
-        className={`font-oswald-bold text-center text-3xl mt-2 tracking-wider ${nom == type_menu ? `bg-[${couleur}]` : ""} text-[#1a1a1a] dark:text-white ${nom == type_menu ? "dark:bg-[#ff3131]" : ""} dark:hover:bg-[${couleur}] hover:bg-[${couleur}] transition-colors duration-300`}
+        className={`font-oswald-bold text-center text-3xl mt-2 tracking-wider ${nom == type_menu ? `bg-[${couleur}]` : ""} text-[#1a1a1a] dark:text-white ${nom == type_menu ? `dark:bg-[${couleur}]` : ""} dark:hover:bg-[${couleur}] hover:bg-[${couleur}] transition-colors duration-300`}
       >{nom}    </p>
       </Link>
       {nom == type_menu ? profilItems.map(([key, value]) => (

@@ -1,12 +1,21 @@
-# React + Vite
+# Présentation Portfolio : 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio React, fais avec TailwindCSS. Vous pouvez facilment fork le repo, et modifier le fichier "params.json" si vous souhaitez faire votre propre portfolio à partir de ce dernier.
 
-Currently, two official plugins are available:
+## To-Do-List
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [] Ajouter la partie "partenaire"
+- [] Lorsque je change de projet, je reste à la position de mon dernier projet (si je suis image 3 et que je passe projet 2 je reste image 3)
+- [] Modifier le placement de la barre de navigation pour "l'histogramme"
+- [] Revoir globalement les placements (positionnement du nightmode par exemple)
+- [] Un projet qui s'affiche de base ?
+- [] Voir comment faire pour gérer les variables d'environnement
+- [] Ajouter les projets universitaire
+- [] Ajouter tout les projets
+- [] ajouter la fonctionnalité "clickable" pour les projets qui n'ont pas de lien
+- [] Finir la page de profil.
+  - [] Faire dans le carré une animation avec du texte qui s'écrit puis s'efface puis s'écrit (originale)
+  - [] Ajouter dans ce même carré la possibilité de voir ma formation en scrollant
+  - [] Ajouter dans le rectangle mes expériences pro : à voir la mise en forme 
+- [] Ajouter la possibilité de scroller de droite à gauche via un scrolle de haut en bas de la souris pour rendre cela plus agréable
+- [] Gérer mon SVG quand la couleur ne dépasse pas les 2 bordure ne se superpose pas c'est moche

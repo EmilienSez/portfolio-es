@@ -15,7 +15,7 @@ export default function Contacts() {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    console.log("activeItem a changé :", activeItem);
+    // console.log("activeItem a changé :", activeItem);
   }, [activeItem]);
 
   const annexeMenuInfo = Object.entries(paramsData.main_menu);

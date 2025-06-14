@@ -18,13 +18,13 @@ export default function Projets() {
   const [page, setPage] = useState(0);
 
   useEffect(() => {
-    console.log("activeItem a changé :", activeItem);
-    console.log(couleurPage);
+    // console.log("activeItem a changé :", activeItem);
+    // console.log(couleurPage);
     setPage(0);
   }, [activeItem]);
 
   useEffect(() => {
-    console.log("activeItem a changé :", );
+    // console.log("activeItem a changé :", );
   }, [activeProject]);
 
   const annexeMenuInfo = Object.entries(paramsData.main_menu);

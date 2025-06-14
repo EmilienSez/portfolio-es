@@ -14,7 +14,7 @@ export default function Profil() {
   const [activeItem, setActiveItem] = useState(sous_menu);
   const [isDark, setIsDark] = useState(false);
   useEffect(() => {
-    console.log("activeItem a changé :", activeItem);
+    // console.log("activeItem a changé :", activeItem);
   }, [activeItem]);
 
   const annexeMenuInfo = Object.entries(paramsData.main_menu);
@@ -87,7 +87,7 @@ export default function Profil() {
 
         {/* <!-- Grand rectangle final --> */}
         <div className="bg-[#f2f4f5] dark:bg-[#1a1a1a] font-oswald-700 border-3 border-[#1a1a1a] dark:border-white row-span-2 col-span-4 flex-col justify-center">
-          <h2 className="font-oswald-bold text-xl text-[#1a1a1a] text-center p-2 border-b-3 dark:text-white">STACK TECHNIQUE - {sous_menu}</h2>
+          <h2 className="font-oswald-bold text-xl text-[#1a1a1a] text-center p-2 border-b-3 dark:text-white">STACK TECHNIQUE - {activeItem}</h2>
           <div className="flex flex-row flex-col justify-between gap-2 items-center space-x-6 overflow-x-auto mt-2 ml-4 mr-4">
             {dataStackTech.map(([key, value]) => (
                 <ComposantStackTech

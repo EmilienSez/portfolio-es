@@ -324,9 +324,20 @@
         "experience_1": {
             "Nom": "Chargé d'étude et pilotage Data",
             "Entreprise": "BATIROC PBL",
-            "Date d'entrée": "Sep - 2023",
-            "Date de sortie": "Jui - 2025",
-            "description": "Mise en place de projet"
+            "type": "CDD",
+            "Date_entree": "Sep 2023",
+            "Date_sortie": "Jui 2025",
+            "Description": [
+                "Chargé de Projet autour du RSE (Taxonomie Européenne)",
+                "Mise en place d'optimisation Comptable",
+                "Gestion & Extraction des données",
+                "Techno : Power BI, Power Query, Python, Oracle, PL/SQL, React"
+            ],
+            "logo": "media/images/entreprise/batiroc-logo-centre.png",
+            "classe_taille_logo": "w-20 h-20",
+            "clickable": true,
+            "text_button": "Lettre de recommandation",
+            "link": "public/media/documents/CV - Sezestre Emilien 2024-2025.pdf"
         }
     },
     "contact": {
@@ -391,6 +402,12 @@
                 "media/images/projets/site_dpe/3.png",
                 "media/images/projets/site_dpe/4.png"
             ]
+        }
+    },
+    "partenaires": {
+        "partenaire_1": {
+            "Nom": "Batiroc BBPL",
+            "Logo_src": "media/images/entreprise/batiroc-logo.png"
         }
     }
 }

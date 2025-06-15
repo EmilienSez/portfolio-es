@@ -2,12 +2,13 @@ import DarkMode from './components/DarkMode';
 import BarreMenuAnnexe from './components/BarreMenuAnnexe';
 import CarteCertification from './components/CarteCertification';
 import ComposantStackTech from './components/ComposantStackTech';
+import CarteExperiencePro from './components/CarteExperiencePro';
 import paramsData from '../assets/data/params.json'
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 export default function Profil() {
-  
+
   const type_menu = 'PROFIL';
   const sous_menu = "LANGUAGES";
 
@@ -20,6 +21,7 @@ export default function Profil() {
   const annexeMenuInfo = Object.entries(paramsData.main_menu);
   const dataCertification = Object.entries(paramsData.certifications).filter(([key, value]) => value.Sous_menu === activeItem);
   const dataStackTech = Object.entries(paramsData.stack_technique).filter(([key, value]) => value.Sous_menu === activeItem);
+  const dataExperiencePro = Object.entries(paramsData.experience_pro);
   const couleurPage = paramsData?.main_menu?.profil?.Couleur;
 
   console.log(dataCertification)
@@ -43,8 +45,8 @@ export default function Profil() {
             />
           ))}
           <div className="flex flex-col justify-end h-64 items-center">
-            <DarkMode 
-            onThemeChange={setIsDark}/>
+            <DarkMode
+              onThemeChange={setIsDark} />
           </div>
         </div>
         {/* <!-- Carré en haut à droite --> */}
@@ -57,8 +59,23 @@ export default function Profil() {
 
         {/* <!-- Rectangle en dessous du carré --> */}
         <div className="bg-[#f2f4f5] dark:bg-[#1a1a1a] border-3 border-[#1a1a1a] dark:border-white row-span-1 col-span-4 flex-col justify-center">
-          <h2 className="font-oswald-bold text-xl text-[#1a1a1a] text-center p-2 dark:text-white uppercase">Expérience professionnelle</h2>
-          <p>Même chose que pour les certification, mais avec des cartes sur allant de gauche à droite</p>
+          {dataExperiencePro.map(([key, value]) => (
+            <CarteExperiencePro
+              key={key}
+              nom={value.Nom}
+              entreprise={value.Entreprise}
+              type={value.type}
+              date_entree={value.Date_entree}
+              date_sortie={value.Date_sortie}
+              description={value.Description}
+              logo={value.logo}
+              taille_logo={value.classe_taille_logo}
+              clickable={value.clickable}
+              text_button={value.text_button}
+              link={value.link}
+              couleur={couleurPage}
+            />
+          ))}
         </div>
 
         {/* <!-- Rectangle long à droite du carré --> */}
@@ -90,17 +107,17 @@ export default function Profil() {
           <h2 className="font-oswald-bold text-xl text-[#1a1a1a] text-center p-2 border-b-3 dark:text-white">STACK TECHNIQUE - {activeItem}</h2>
           <div className="flex flex-row flex-col justify-between gap-2 items-center space-x-6 overflow-x-auto mt-2 ml-4 mr-4">
             {dataStackTech.map(([key, value]) => (
-                <ComposantStackTech
-                  key={key}
-                  sous_menu={value.Sous_menu}
-                  nom={value.Nom}
-                  logo_src={value.Logo_src}
-                  note={value.Note}
-                  rounded={value.rounded}
-                  color={isDark ? "#f2f4f5" : "#1a1a1a"}
-                  colorBar={couleurPage}
-                />
-              ))}
+              <ComposantStackTech
+                key={key}
+                sous_menu={value.Sous_menu}
+                nom={value.Nom}
+                logo_src={value.Logo_src}
+                note={value.Note}
+                rounded={value.rounded}
+                color={isDark ? "#f2f4f5" : "#1a1a1a"}
+                colorBar={couleurPage}
+              />
+            ))}
           </div>
         </div>
       </div>

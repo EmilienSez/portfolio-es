@@ -4,7 +4,7 @@ Portfolio React, fais avec TailwindCSS. Vous pouvez facilment fork le repo, et m
 
 ## To-Do-List
 
-- [] Ajouter la partie "partenaire"
+- [x] Ajouter la partie "partenaire"
 - [] Lorsque je change de projet, je reste à la position de mon dernier projet (si je suis image 3 et que je passe projet 2 je reste image 3)
 - [] Modifier le placement de la barre de navigation pour "l'histogramme"
 - [] Revoir globalement les placements (positionnement du nightmode par exemple)
@@ -19,3 +19,4 @@ Portfolio React, fais avec TailwindCSS. Vous pouvez facilment fork le repo, et m
   - [] Ajouter dans le rectangle mes expériences pro : à voir la mise en forme 
 - [] Ajouter la possibilité de scroller de droite à gauche via un scrolle de haut en bas de la souris pour rendre cela plus agréable
 - [] Gérer mon SVG quand la couleur ne dépasse pas les 2 bordure ne se superpose pas c'est moche
+- [] Gérer dans Les certifications, quand je scroll, le dernier élément ne doit pas avoir de border en bas.

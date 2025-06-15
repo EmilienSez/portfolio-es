@@ -24,7 +24,15 @@ export default function Profil() {
   const dataExperiencePro = Object.entries(paramsData.experience_pro);
   const couleurPage = paramsData?.main_menu?.profil?.Couleur;
 
-  console.log(dataCertification)
+  // console.log(dataCertification)
+
+  // Gestion des Expériences Pro : 
+  const [page, setPage] = useState(0);
+  const experienceProActuelle = dataExperiencePro[page][1];
+  console.log(experienceProActuelle);
+  const hasNextPage = page < dataExperiencePro.length;
+  const hasPrevPage = page > 0;
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <div className="grid grid-cols-8 grid-rows-3 gap-4 p-10 bg-[#f2f4f5] dark:bg-[#1a1a1a] shadow-lg w-screen h-screen">
@@ -59,23 +67,32 @@ export default function Profil() {
 
         {/* <!-- Rectangle en dessous du carré --> */}
         <div className="bg-[#f2f4f5] dark:bg-[#1a1a1a] border-3 border-[#1a1a1a] dark:border-white row-span-1 col-span-4 flex-col justify-center">
-          {dataExperiencePro.map(([key, value]) => (
+          <div className="relative w-full h-full p-2 flex flex-col dark:bg-[#1a1a1a] dark:border-white ">
+            {hasPrevPage && (
+              <button onClick={() => setPage(page - 1)} className="absolute top-1/2 left-2 transform -translate-y-1/2 cursor-pointer">
+              <img src="media/images/arrow-left.png" alt="Next" className="w-8 h-8" />
+            </button>
+            )}
             <CarteExperiencePro
-              key={key}
-              nom={value.Nom}
-              entreprise={value.Entreprise}
-              type={value.type}
-              date_entree={value.Date_entree}
-              date_sortie={value.Date_sortie}
-              description={value.Description}
-              logo={value.logo}
-              taille_logo={value.classe_taille_logo}
-              clickable={value.clickable}
-              text_button={value.text_button}
-              link={value.link}
+              nom={experienceProActuelle.Nom}
+              entreprise={experienceProActuelle.Entreprise}
+              type={experienceProActuelle.type}
+              date_entree={experienceProActuelle.Date_entree}
+              date_sortie={experienceProActuelle.Date_sortie}
+              description={experienceProActuelle.Description}
+              logo={experienceProActuelle.logo}
+              taille_logo={experienceProActuelle.classe_taille_logo}
+              clickable={experienceProActuelle.clickable}
+              text_button={experienceProActuelle.text_button}
+              link={experienceProActuelle.link}
               couleur={couleurPage}
             />
-          ))}
+            {hasNextPage && (
+              <button onClick={() => setPage(page + 1)} className="absolute top-1/2 right-2 transform -translate-y-1/2 cursor-pointer">
+              <img src="media/images/arrow-right.png" alt="Next" className="w-8 h-8" />
+            </button>
+            )}
+          </div>
         </div>
 
         {/* <!-- Rectangle long à droite du carré --> */}

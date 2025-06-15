@@ -338,6 +338,23 @@
             "clickable": true,
             "text_button": "Lettre de recommandation",
             "link": "public/media/documents/CV - Sezestre Emilien 2024-2025.pdf"
+        },
+        "experience_2": {
+            "Nom": "Stagiaire Data Analyst",
+            "Entreprise": "DB SCHENKER",
+            "type": "Stage",
+            "Date_entree": "Avr 2023",
+            "Date_sortie": "Sep 2023",
+            "Description": [
+                "Gestion de projet : Implémentation de nouveaux TMS",
+                "Analyse et maintenance des BDD Clients et fournisseurs",
+                "Techno : Logiciel : Power BI, Excel"
+            ],
+            "logo": "media/images/entreprise/batiroc-logo-centre.png",
+            "classe_taille_logo": "w-20 h-20",
+            "clickable": true,
+            "text_button": "Rapport de Stage",
+            "link": "public/media/documents/CV - Sezestre Emilien 2024-2025.pdf"
         }
     },
     "contact": {

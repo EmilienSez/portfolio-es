@@ -111,6 +111,7 @@ export default function Projets() {
               <ScrollProject 
               imagesArray={dataProjetactif[0][1]["images"]} 
               lien = {dataProjetactif[0][1]["lien"]}
+              clickable = {dataProjetactif[0][1]["clickable"]}
               
               />
             )}

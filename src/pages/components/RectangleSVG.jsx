@@ -16,6 +16,7 @@ const RectangleSVG = ({fillPercentage = 50, width = 35, height = 55, borderSize 
         stroke={color}
         strokeWidth={borderSize}
       />
+
       {/* Remplissage contrôlé */}
       <rect
         x={borderSize/2}

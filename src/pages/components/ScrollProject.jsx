@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-export default function ScrollProject({imagesArray, lien}) {
+export default function ScrollProject({imagesArray, lien, clickable}) {
 
   const images = Array.isArray(imagesArray[0]) ? imagesArray[0] : imagesArray;
 
@@ -37,7 +37,7 @@ export default function ScrollProject({imagesArray, lien}) {
           />
 
           {/* Bouton centré par-dessus */}
-          <a href={lien}
+        {clickable && ( <a href={lien}
         id="doc-dpe"
         target="_blank"
         rel="noopener noreferrer"
@@ -45,7 +45,7 @@ export default function ScrollProject({imagesArray, lien}) {
           row-start-1 col-start-1 mt-[45%] ml-[70%] border-2
           hover:bg-[#ffde59] duration-300">
             Voir plus
-          </a>
+          </a>)}
         </div>
       </div>
     ))}

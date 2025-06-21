@@ -316,8 +316,65 @@
             "Sous_menu": "APPLICATIONS",
             "Nom": "My SQL",
             "Logo_src": "media/images/my-sql-logo.png",
-            "Note": 80,
+            "Note": 10,
             "rounded": false
+        }
+    },
+    "cursus_unisersitaire": {
+        "annee_1": {
+            "Ecole": "IAE Angers",
+            "diplome": "Master 2",
+            "intitule": "Ingénierie des données et études économétriques",
+            "Date": "2022-2023",
+            "mention": "Bien",
+            "classement": "2/16",
+            "Description": "Méthode d'évaluation, Recherche opérationnelle, Modélisation stochastique, Machine Learning, Econométrie des données de panel, des modèles de durée",
+            "clickable" : true,
+            "link" : "media/documents/Notes L1 - M2.pdf"
+        },
+        "annee_2": {
+            "Ecole": "IAE Angers",
+            "diplome": "Master 1",
+            "intitule": "Ingénierie des données et études Econométriques",
+            "Date": "2021-2022",
+            "mention": "Bien",
+            "classement": "2/17",
+            "Description": "Datamining, Econométrie des séries temporelle, des données transversales",
+            "clickable" : true,
+            "link" : "media/documents/Notes L1 - M2.pdf"
+        },
+        "annee_3": {
+            "Ecole": "IAE Angers",
+            "diplome": "Licence 3",
+            "intitule": "Economie Appliquée",
+            "Date": "2020-2021",
+            "mention": "Assez Bien",
+            "classement": "11/44",
+            "Description": "",
+            "clickable" : true,
+            "link" : "media/documents/Notes L1 - M2.pdf"
+        },
+        "annee_4": {
+            "Ecole": "IAE Angers",
+            "diplome": "Licence 2",
+            "intitule": "Economie Appliquée",
+            "Date": "2019-2020",
+            "mention": "Sans Mention",
+            "classement": "21/56",
+            "Description": "",
+            "clickable" : true,
+            "link" : "media/documents/Notes L1 - M2.pdf"
+        },
+        "annee_5": {
+            "Ecole": "IAE Angers",
+            "diplome": "Licence 1",
+            "intitule": "Economie - Gestion",
+            "Date": "2018-2019",
+            "mention": "Mention Bien",
+            "classement": "7/247",
+            "Description": "",
+            "clickable" : true,
+            "link" : "media/documents/Notes L1 - M2.pdf"
         }
     },
     "experience_pro": {
@@ -337,7 +394,8 @@
             "classe_taille_logo": "w-20 h-20",
             "clickable": true,
             "text_button": "Lettre de recommandation",
-            "link": "public/media/documents/CV - Sezestre Emilien 2024-2025.pdf"
+            "link": "media/documents/CV - Sezestre Emilien 2024-2025.pdf",
+            "logo_dark" : "media/images/entreprise/batiroc-logo-centre-white.png"
         },
         "experience_2": {
             "Nom": "Stagiaire Data Analyst",
@@ -348,13 +406,32 @@
             "Description": [
                 "Gestion de projet : Implémentation de nouveaux TMS",
                 "Analyse et maintenance des BDD Clients et fournisseurs",
-                "Techno : Logiciel : Power BI, Excel"
+                "Logiciel : Power BI, Excel"
             ],
-            "logo": "media/images/entreprise/batiroc-logo-centre.png",
+            "logo": "media/images/entreprise/db-schenker-logo.png",
             "classe_taille_logo": "w-20 h-20",
             "clickable": true,
             "text_button": "Rapport de Stage",
-            "link": "public/media/documents/CV - Sezestre Emilien 2024-2025.pdf"
+            "link": "media/documents/Rapport de stage - db-schenker.pdf",
+            "logo_dark" : "media/images/entreprise/db-schenker-logo.png"
+        },
+        "experience_3": {
+            "Nom": "Stagiaire Data Analyst",
+            "Entreprise": "Service culturel de l'université d'Angers",
+            "type": "Stage",
+            "Date_entree": "Mai 2022",
+            "Date_sortie": "juin 2022",
+            "Description": [
+                "Etude d'une enquête sur les pratiques culturelles des étudiants",
+                "Etude Descriptive, puis via clustering, ACM, CAH, Régression multiple",
+                "Logiciel : Power BI, Excel, R, Stata"
+            ],
+            "logo": "media/images/entreprise/ua-logo.png",
+            "classe_taille_logo": "w-20 h-20",
+            "clickable": true,
+            "text_button": "Rapport de Stage",
+            "link": "media/documents/rapport de stage-culture-ua.pdf",
+            "logo_dark" : "media/images/entreprise/ua-logo-white.png"
         }
     },
     "contact": {
@@ -370,7 +447,7 @@
         },
         "cv_feuille": {
             "nom": "CV",
-            "link": "public/media/documents/CV - Sezestre Emilien 2024-2025.pdf",
+            "link": "media/documents/CV - Sezestre Emilien 2024-2025.pdf",
             "logo": "media/images/cv-logo.png"
         }
     },
@@ -390,7 +467,7 @@
             "Nom": "Estimateur prix immobilier",
             "Sous_menu": "DATA",
             "clickable": true,
-            "lien": "public/media/documents/Projet Machine Learning.pdf",
+            "lien": "media/documents/Projet Machine Learning.pdf",
             "images": [
                 "media/images/projets/estimateur_immo/1.png",
                 "media/images/projets/estimateur_immo/2.png",

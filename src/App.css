@@ -62,3 +62,15 @@
   background-color: rgb(255 222 89 / var(--tw-bg-opacity, 1));
 }
 
+.blinking-cursor {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

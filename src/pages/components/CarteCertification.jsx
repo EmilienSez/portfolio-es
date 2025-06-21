@@ -1,12 +1,12 @@
-export default function CarteCertification({ sous_menu, nom, couleur_basse, couleur_haute, image_src, description, lien_certification, pourcentage_progression }) {
+export default function CarteCertification({ sous_menu, nom, couleur_basse, couleur_haute, image_src, description, lien_certification, pourcentage_progression, last }) {
 
   return (
     <li className="">
-      <div className="mt-2 flex justify-center">
-        <div className="border-b-3 border-[#1a1a1a] dark:border-white overflow-hidden shadow-md flex items-center p-4 w-[464px] h-35">
+      <div className="mt-2 flex justify-center ">
+        <div className={`${last ? "border-b-0" : "border-b-3"} border-[#1a1a1a] dark:border-white overflow-hidden flex items-center p-4 w-[464px] h-35`}>
           <img src={image_src} alt="" className="w-16 h-16 object-cover hidden sm:block border-2 rounded-full dark:border-white " />
           <div className="m-2 flex-1">
-            <p className="font-oswald-bold text-md line-clamp-1 dark:text-white"> {nom} </p>
+            <p className="font-oswald-bold text-md line-clamp-1 dark:text-white">{nom}</p>
             <p className="font-oswald-normal text-sm break-words line-clamp-2 h-12 dark:text-white"> {description}</p>
             <div className="flex justify-end">
               <a

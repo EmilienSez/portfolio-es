@@ -8,12 +8,12 @@ export default function CarteExperiencePro({ nom, entreprise, type, date_entree,
             <h2 className="text-xl font-oswald-bold text-center uppercase dark:text-white mb-2">{nom}</h2>
 
             {/* Type + Dates */}
-            <p className="text-md font-oswald-normal text-center uppercase dark:text-white mb-4">
+            <p className="text-md font-oswald-normal text-center uppercase dark:text-white mb-2">
                 {`${type} | ${date_entree} - ${date_sortie}`}
             </p>
 
             {/* Logo + Description */}
-            <div className="flex gap-4 items-start">
+            <div className="flex gap-4 items-start ml-6">
                 {/* Logo à gauche */}
                 <img src={logo} alt="logo-entreprise" className={`shrink-0 ${taille_logo}`} />
 
@@ -34,7 +34,7 @@ export default function CarteExperiencePro({ nom, entreprise, type, date_entree,
                         href={link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`font-oswald-normal text-sm border-2 px-3 py-1 border-[#d8222e] bg-[${couleur}] hover:bg-[#d8222e] transition duration-300 text-white`}
+                        className={`font-oswald-normal text-sm border-2 px-3 py-1 border-[#d8222e] bg-[${couleur}] hover:bg-[#d8222e] transition duration-300 text-white inline-block min-w-[10rem] text-center`}
                     >
                         {text_button}
                     </a>

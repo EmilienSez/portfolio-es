@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio - SEZESTRE Emilien</title>
+
+    <link rel="stylesheet" href="Styles/Main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+
+</head>
+
+<body>
+
+    <canvas id="Canvas3D"></canvas>
+
+    <div id="MainDiv">
+
+        <div id="MouseGlow"></div>
+        <div id="MouseGlowBlur"></div>
+
+        <!-- <div class="TopPanel">
+            <h1>Sezestre Emilien</h1>
+            <p>Expérience</p>
+            <p>Projets</p>
+            <p>Formation</p>
+        </div> -->
+
+        <div id="RightPanel">
+
+            <div id="Section1" class="Section">
+                <h2 class="montserrat-bold">Expérience Professionnelle</h2>
+                <p class="EPIntitule montserrat-semibold">Chargé d'études & Pilotage pôle Data</p>
+                <p class="EPDuree montserrat-regular">CDD | SEP 2023 - JUI 2025</p>
+                <p class="EPDescription montserrat-regular"> J’ai occupé le poste de chargé d’étude et pilotage data au
+                    sein de Batiroc
+                    BPL, rattaché à la Direction Administrative et Financière (DAF). Initialement recruté en CDD pour
+                    une durée de 6 mois, j’ai finalement exercé pendant 2 ans. Mon contrat en CDD n’a pas été renouvelé
+                    pour des raisons légales, et aucune proposition de CDI n’a été faite pour des raisons économiques.
+                    Mes missions étaient variées et se répartissaient principalement en trois volets : </p>
+                <li class="EPLiDescription montserrat-regular"> Activité courante : réalisation d’extractions SQL
+                    ponctuelles ainsi que
+                    la création de nouvelles
+                    extractions et la correction de procédures existantes. J’ai également développé des packages
+                    PL/SQL,
+                    créé des procédures, jobs et autres objets dans le cadre de l’évolution ou de la création de
+                    nouveaux reportings. Ces développements ont été réalisés sur un SGBD Oracle.
+                </li>
+                <li class="EPLiDescription montserrat-regular">Activité projet orientée RSE : en tant que chargé de
+                    projet, j’ai
+                    conduit des initiatives liées
+                    à l’immobilier durable (dis green). J’ai notamment développé un site web « statique » utilisant
+                    des appels API, car les requête "curl" étaient limité par un proxy interne (le site était
+                    hébergé gratuitement via GitHub Pages et utilisait des requêtes AJAX, donc développement en
+                    HTML, CSS, JS). J’ai aussi réalisé une cartographie des risques climatiques avec le framework
+                    React et le packages leaflet-react. Par ailleurs, j’ai mis en place des rapports Power BI et des
+                    modes opératoires pour accompagner ces projets. J’ai travaillé sur des sujets liés à la
+                    taxonomie européenne et effectué du traitement de données majoritairement avec Python, en créant
+                    des workflows automatisés.
+                </li>
+                <li class="EPLiDescription montserrat-regular">
+                    Création de tableaux de bord : j’ai conçu et maintenu des tableaux de bord Power BI pour les
+                    activités courantes, ainsi que des rapports plus simples directement sur Excel, en utilisant
+                    VBA, Power Query et VBS selon les besoins.
+                </li>
+                <div class="container">
+                    <a href="Documents/Lettre recommandation Emilien.pdf" target="_blank">
+                        <button class="EPButton montserrat-regular"> Lettre de recommandation </button>
+                    </a>
+                </div>
+                <p class="EPIntitule montserrat-semibold">Data Analyst</p>
+                <p class="EPDuree montserrat-regular">STAGE | AVR 2023 - SEP 2025</p>
+                <p class="EPDescription montserrat-regular">
+                    Rattaché au pôle MDM (Master Data Management) de DB Schenker, j’ai réalisé un stage dont le sujet
+                    principal portait sur la fiabilisation des données.
+                    <br><br>
+                    L’objectif du projet était de fiabiliser la base client de DB Schenker, qui provenait de cinq
+                    systèmes TMS/CRM différents, ce qui complexifiait la consolidation et la qualité des données. Pour
+                    cela, nous devions comparer et rapprocher cette base avec une base fiabilisée appelée Intuiz.
+                    <br><br>
+                    Dans le cadre de ce projet, j’ai principalement réalisé du développement en Python, ainsi que de
+                    nombreux travaux sur Power Query et Excel, afin d’automatiser et optimiser les traitements de
+                    données nécessaires à la fiabilisation.
+
+                </p>
+                </li>
+                <div class="container">
+                    <a href="Documents/Rapport de stage - db-schenker.pdf" target="_blank">
+                        <button class="EPButton montserrat-regular"> Rapport de stage </button>
+                    </a>
+                </div>
+                <p class="EPIntitule montserrat-semibold">Chargé d'études Statistiques</p>
+                <p class="EPDuree montserrat-regular">STAGE | MAI 2022 - JUIN 2022</p>
+                <p class="EPDescription montserrat-regular"> Lors de mon stage au sein du service culturel de
+                    l’Université d’Angers, ma mission principale consistait à analyser un sondage réalisé durant l’année
+                    portant sur les différentes opérations menées par le service.
+
+                    Le travail s’est articulé en trois grandes parties :
+
+                    <li class="EPLiDescription montserrat-regular"> Une revue documentaire scientifique centrée sur les
+                        pratiques culturelles des étudiants,
+                        principalement dans le domaine de la sociologie, suivie d’une synthèse et rédaction des éléments
+                        clés issus de cette documentation.
+                    </li>
+                    <li class="EPLiDescription montserrat-regular"> Une première analyse avec des statistiques
+                        descriptives
+                        réalisée avec Excel pour explorer les données brutes du
+                        sondage.
+                    </li>
+                    <li class="EPLiDescription montserrat-regular">
+                        Une analyse plus approfondie des données à l’aide du logiciel R, comprenant des régressions
+                        multiples, des analyses en composantes multiples (ACM), en composantes principales (ACP) ainsi
+                        que
+                        du clustering, afin d’identifier des profils spécifiques d’étudiants et d’affiner la
+                        compréhension
+                        des résultats.
+                </p>
+                </li>
+                <div class="container">
+                    <a href="Documents/rapport de stage-culture-ua.pdf" target="_blank">
+                        <button class="EPButton montserrat-regular">Rapport de stage</button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="Section2" class="Section">
+
+                <h2 class="montserrat-bold">Stack technique</h2>
+
+                <div>
+                    <p class="EPIntitule montserrat-bold">Web</p>
+                    <div class="STCardLogo">
+                        <div class="STImgcardLogo">
+                            <img src="/Images/logo/html-logo-black.png" data-hover="/Images/logo/html-logo.png" alt=""
+                                class="STImgLogo">
+                            <p class="STTextLogo montserrat-semibold"> HTML </p>
+                        </div>
+                        <div class="STImgcardLogo">
+                            <img src="/Images/logo/css-logo.png" data-hover="/Images/logo/css-logo-black.png" alt=""
+                                class="STImgLogo">
+                            <p class="STTextLogo montserrat-semibold"> CSS </p>
+                        </div>
+                        <div class="STImgcardLogo">
+                            <img src="/Images/logo/javascript-logo.png"
+                                data-hover="/Images/logo/javascript-logo-black.png" alt="" class="STImgLogo">
+                            <p class="STTextLogo montserrat-semibold"> JavaScript </p>
+                        </div>
+                        <div class="STImgcardLogo">
+                            <img src="/Images/logo/react-logo.png" data-hover="/Images/logo/react-logo-black.png" alt=""
+                                class="STImgLogo">
+                            <p class="STTextLogo montserrat-semibold"> React </p>
+                        </div>
+                        <div class="STImgcardLogo">
+                            <img src="/Images/logo/django-logo.png" data-hover="/Images/logo/django-logo-black.png"
+                                alt="" class="STImgLogo">
+                            <p class="STTextLogo montserrat-semibold"> Django </p>
+                        </div>
+                        <div class="STImgcardLogo">
+                            <img src="/Images/logo/tailwindcss-logo.png"
+                                data-hover="/Images/logo/tailwindcss-logo-black.png" alt="" class="STImgLogo">
+                            <p class="STTextLogo montserrat-semibold"> TailWindCSS </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <p class="EPIntitule montserrat-bold">Gestion de Projet</p>
+                <div class="STCardLogo">
+                    <div class="STImgcardLogo">
+                        <img src="/Images/logo/git-logo.png" data-hover="/Images/logo/git-logo-black.png" alt=""
+                            class="STImgLogo">
+                        <p class="STTextLogo montserrat-semibold"> Git </p>
+                    </div>
+                    <div class="STImgcardLogo">
+                        <img src="/Images/logo/jira-logo.png" data-hover="/Images/logo/jira-logo-black.png" alt=""
+                            class="STImgLogo">
+                        <p class="STTextLogo montserrat-semibold"> Jira </p>
+                    </div>
+                    <div class="STImgcardLogo">
+                        <img src="/Images/logo/confluence-logo.png" data-hover="/Images/logo/confluence-logo-black.png"
+                            alt="" class="STImgLogo">
+                        <p class="STTextLogo montserrat-semibold"> Confluence </p>
+                    </div>
+                </div>
+
+
+                <p class="EPIntitule montserrat-bold">Data Prep</p>
+                <div class="STCardLogo">
+                    <div class="STImgcardLogo">
+                        <img src="/Images/logo/alteryx-logo.png" data-hover="/Images/logo/alteryx-logo-black.png" alt=""
+                            class="STImgLogo">
+                        <p class="STTextLogo montserrat-semibold"> Alteryx </p>
+                    </div>
+                    <div class="STImgcardLogo">
+                        <img src="/Images/logo/power-query-logo.png"
+                            data-hover="/Images/logo/power-query-logo-black.png" alt="" class="STImgLogo">
+                        <p class="STTextLogo montserrat-semibold"> Power Query </p>
+                    </div>
+                </div>
+
+                <p class="EPIntitule montserrat-bold">Language</p>
+                <div class="STCardLogo">
+                    <div class="STImgcardLogo">
+                        <img src="/Images/logo/python-logo.png" data-hover="/Images/logo/python-logo-black.png" alt=""
+                            class="STImgLogo">
+                        <p class="STTextLogo montserrat-semibold"> Python </p>
+                    </div>
+                    <div class="STImgcardLogo">
+                        <img src="/Images/logo/sql-logo.png" data-hover="/Images/logo/sql-logo-black.png" alt=""
+                            class="STImgLogo">
+                        <p class="STTextLogo montserrat-semibold"> PL/SQL </p>
+                    </div>
+                    <div class="STImgcardLogo">
+                        <img src="/Images/logo/r-logo.png" data-hover="/Images/logo/r-logo-black.png" alt=""
+                            class="STImgLogo">
+                        <p class="STTextLogo montserrat-semibold"> RStudio </p>
+                    </div>
+                    <div class="STImgcardLogo">
+                        <img src="/Images/logo/vba-logo.png" data-hover="/Images/logo/vba-logo-black.png" alt=""
+                            class="STImgLogo">
+                        <p class="STTextLogo montserrat-semibold"> VBA </p>
+                    </div>
+                </div>
+
+                <p class="EPIntitule montserrat-bold">Data Visualisation</p>
+                <div class="STCardLogo">
+                    <div class="STImgcardLogo">
+                        <img src="/Images/logo/power-bi-logo-black.png" data-hover="/Images/logo/power-bi-logo.png"
+                            alt="" class="STImgLogo">
+                        <p class="STTextLogo montserrat-semibold"> Power BI </p>
+                    </div>
+                    <div class="STImgcardLogo">
+                        <img src="/Images/logo/microstrategy-logo.png"
+                            data-hover="/Images/logo/microstrategy-logo-black.png" alt="" class="STImgLogo">
+                        <p class="STTextLogo montserrat-semibold"> Strategy </p>
+                    </div>
+                    <div class="STImgcardLogo">
+                        <img src="/Images/logo/tableau-logo.png" data-hover="/Images/logo/tableau-logo-black.png" alt=""
+                            class="STImgLogo">
+                        <p class="STTextLogo montserrat-semibold"> Tableau </p>
+                    </div>
+                </div>
+                <p class="EPIntitule montserrat-bold">Base de données</p>
+                <div class="STCardLogo">
+                    <div class="STImgcardLogo">
+                        <img src="/Images/logo/oracle-logo.png" data-hover="/Images/logo/oracle-logo-black.png" alt=""
+                            class="STImgLogo">
+                        <p class="STTextLogo montserrat-semibold"> Oracle </p>
+                    </div>
+                    <div class="STImgcardLogo">
+                        <img src="/Images/logo/my-sql-logo.png" data-hover="/Images/logo/my-sql-logo-black.png" alt=""
+                            class="STImgLogo">
+                        <p class="STTextLogo montserrat-semibold"> MySQL </p>
+                    </div>
+                    <div class="STImgcardLogo">
+                        <img src="/Images/logo/postgresql-logo.png" data-hover="/Images/logo/postgresql-logo-black.png"
+                            alt="" class="STImgLogo">
+                        <p class="STTextLogo montserrat-semibold"> PostGreSQL </p>
+                    </div>
+                    <div class="STImgcardLogo">
+                        <img src="/Images/logo/access-logo-black.png" data-hover="/Images/logo/access-logo.png" alt=""
+                            class="STImgLogo">
+                        <p class="STTextLogo montserrat-semibold"> Access </p>
+                    </div>
+                </div>
+                <p class="EPIntitule montserrat-bold">ETL</p>
+                <div class="STCardLogo">
+                    <div class="STImgcardLogo">
+                        <img src="/Images/logo/talend-logo.png" data-hover="/Images/logo/talend-logo-black.png" alt=""
+                            class="STImgLogo">
+                        <p class="STTextLogo montserrat-semibold"> Talend </p>
+                    </div>
+                </div>
+                <!-- <a href="https://github.com/LuckeyDuckey/Pygame_Lighting_Engine" target="_blank" class="Project">
+                    <p data-value="Lighting Engine " style="color: white; font-weight: bold; white-space: pre;">Lighting
+                        Engine </p>
+                    <p data-value="2D Lighting Framework Pygame">2D Lighting Framework Pygame</p>
+                    <div class="Separator"></div>
+                    <p data-value="2023">2023</p>
+                    </a> -->
+
+            </div>
+
+            <div id="Section3" class="Section">
+                <h2 class="montserrat-bold">Formation</h2>
+                <p class="EPIntitule montserrat-semibold">Master - Ingénierie des données et études Econométriques
+                </p>
+                <p class="EPDuree montserrat-regular">IAE d'Angers | 2021 - 2023</p>
+                <p class="EPDescription montserrat-bold">Classement 2/16</p>
+                <p class="EPDescription montserrat-regular"> J’ai occupé </p>
+                <li class="EPLiDescription montserrat-regular"> Activité courante
+                </li>
+                <li class="EPLiDescription montserrat-regular">Activité projet orientée
+                </li>
+                <li class="EPLiDescription montserrat-regular">
+                    Création de tableaux de bord : j’ai
+                </li>
+
+                <p class="EPIntitule montserrat-semibold">Master I - Ingénierie des données et études Econométriques</p>
+                <p class="EPDuree montserrat-regular">IAE d'Angers | 2021 - 2022</p>
+                <p class="EPDescription montserrat-bold">Classement 2/17</p>
+                <p class="EPDescription montserrat-regular"> J’ai occupé
+                    <li class="EPLiDescription montserrat-regular"> Activité courante
+                    </li>
+                    <li class="EPLiDescription montserrat-regular"> Activité projet orientée
+                    </li>
+                    <li class="EPLiDescription montserrat-regular">
+                        Création de tableaux de bord : j’ai
+                    </li>
+
+                <p class="EPIntitule montserrat-semibold">Licence - Economie Appliquée
+                </p>
+                <p class="EPDuree montserrat-regular">IAE d'Angers | 2018 - 2021</p>
+                <p class="EPDescription montserrat-bold">Classement 2/17</p>
+                <p class="EPDescription montserrat-regular"> J’ai occupé </p>
+                <li class="EPLiDescription montserrat-regular"> Activité courante
+                </li>
+                <li class="EPLiDescription montserrat-regular">Activité projet orientée
+                </li>
+                <li class="EPLiDescription montserrat-regular">
+                    Création de tableaux de bord : j’ai
+                </li>
+                <div class="container">
+                    <a href="Documents/Lettre recommandation Emilien.pdf" target="_blank">
+                        <button class="EPButton montserrat-regular"> Note </button>
+                    </a>
+                </div>
+            </div>
+            <div id="Section4" class="Section">
+                <h2 class="montserrat-bold">Certification</h2>
+                <div class="cardCertificationContainer">
+                    <div class="cardCertification">
+                        <a href="https://www.udemy.com/certificate/UC-bcfa2d41-fe40-4c72-a450-fbd8516eafb9/"
+                            target="_blank" class="cardCertificationLink">
+                            <img src="/Images/logo/udemy-logo.png" data-hover="/Images/logo/udemy-logo-black.png" alt=""
+                                class="imgCertificationLogo">
+                            <p class="textCertificationTitre montserrat-bold">Talend - Du Débutant à la Maîtrise [A-Z]
+                            </p>
+                            <p class="textCertificationTitre montserrat-semibold"> 23 heures | SEP 2025</p>
+                            <p class="textCertificationDescription montserrat-regular">Introduction complète à
+                                JavaScript dans le cadre du développement Web</p>
+                            <p class="textCertificationFin montserrat-regular">Accéder à la certification</p>
+                        </a>
+                    </div>
+                    <div class="cardCertification">
+                        <a href="https://www.udemy.com/certificate/UC-3b9f06f8-f83d-43a3-8d5d-cb79f901a25e/"
+                            target="_blank" class="cardCertificationLink">
+                            <img src="/Images/logo/udemy-logo.png" data-hover="/Images/logo/udemy-logo-black.png" alt=""
+                                class="imgCertificationLogo">
+                            <p class="textCertificationTitre montserrat-bold">JavaScript : La formation ultime</p>
+                            <p class="textCertificationTitre montserrat-semibold"> 15 heures | FEV 2025</p>
+                            <p class="textCertificationDescription montserrat-regular">Introduction complète à
+                                JavaScript dans le cadre du développement Web</p>
+                            <p class="textCertificationFin montserrat-regular">Accéder à la certification</p>
+                        </a>
+                    </div>
+                    <div class="cardCertification">
+                        <a href="https://drive.google.com/file/d/1TdgEoTqbdZTtxQuAfqGGymW0QQLuDNuV/view" target="_blank"
+                            class="cardCertificationLink">
+                            <img src="/Images/logo/microstrategy-logo.png"
+                                data-hover="/Images/logo/microstrategy-logo-black.png" alt=""
+                                class="imgCertificationLogo">
+                            <p class="textCertificationTitre montserrat-bold">
+                                Departmental Analyst Certification</p>
+                            <p class="textCertificationTitre montserrat-semibold"> 20 heures | JUIN 2023</p>
+                            <p class="textCertificationDescription montserrat-regular">Introduction complète à
+                                JavaScript dans le cadre du développement Web</p>
+                            <p class="textCertificationFin montserrat-regular">Accéder à la certification</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="cardCertificationContainer">
+                    <div class="cardCertification">
+                        <a href="https://www.udemy.com/certificate/UC-f702561d-cfa8-42fb-9785-a8b8fb08c9c7/"
+                            target="_blank" class="cardCertificationLink">
+                            <img src="/Images/logo/udemy-logo.png" data-hover="/Images/logo/udemy-logo-black.png" alt=""
+                                class="imgCertificationLogo">
+                            <p class="textCertificationTitre montserrat-bold">The Ultimate MySQL Bootcamp</p>
+                            <p class="textCertificationTitre montserrat-semibold"> 37.5 heures | MAR 2023</p>
+                            <p class="textCertificationDescription montserrat-regular">Introduction complète à
+                                JavaScript dans le cadre du développement Web</p>
+                            <p class="textCertificationFin montserrat-regular">Accéder à la certification</p>
+                        </a>
+                    </div>
+                    <div class="cardCertification">
+                        <a href="https://www.udemy.com/certificate/UC-206729f5-df0a-45aa-9118-8d02a8b5e2d5/"
+                            target="_blank" class="cardCertificationLink">
+                            <img src="/Images/logo/udemy-logo.png" data-hover="/Images/logo/udemy-logo-black.png" alt=""
+                                class="imgCertificationLogo">
+                            <p class="textCertificationTitre montserrat-bold">Alteryx Bootcamp</p>
+                            <p class="textCertificationTitre montserrat-semibold"> 23 heures | NOV 2022</p>
+                            <p class="textCertificationDescription montserrat-regular">Introduction complète à
+                                JavaScript dans le cadre du développement Web</p>
+                            <p class="textCertificationFin montserrat-regular">Accéder à la certification</p>
+                        </a>
+                    </div>
+                    <div class="cardCertification">
+                        <a href="https://www.udemy.com/certificate/UC-f0a5cfd7-5f06-4601-b2b9-0ba0c3712b94/"
+                            target="_blank" class="cardCertificationLink">
+                            <img src="/Images/logo/udemy-logo.png" data-hover="/Images/logo/udemy-logo-black.png" alt=""
+                                class="imgCertificationLogo">
+                            <p class="textCertificationTitre montserrat-bold">Alteryx : Real-Life Exercices For Data
+                                Analytics</p>
+                            <p class="textCertificationTitre montserrat-semibold"> 37.5 heures | NOV 2022</p>
+                            <p class="textCertificationDescription montserrat-regular">Introduction complète à
+                                JavaScript dans le cadre du développement Web</p>
+                            <p class="textCertificationFin montserrat-regular">Accéder à la certification</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="cardCertificationContainer">
+                    <div class="cardCertification">
+                        <a href="https://www.udemy.com/certificate/UC-baf71813-17c4-4ac1-953d-8c49d2f1a0fc/"
+                            target="_blank" class="cardCertificationLink">
+                            <img src="/Images/logo/udemy-logo.png" data-hover="/Images/logo/udemy-logo-black.png" alt=""
+                                class="imgCertificationLogo">
+                            <p class="textCertificationTitre montserrat-bold">Devenir un Expert de Power BI - La
+                                formation complète</p>
+                            <p class="textCertificationTitre montserrat-semibold"> 37.5 heures | SEP 2022</p>
+                            <p class="textCertificationDescription montserrat-regular">Introduction complète à
+                                JavaScript dans le cadre du développement Web</p>
+                            <p class="textCertificationFin montserrat-regular">Accéder à la certification</p>
+                        </a>
+                    </div>
+                    <div class="cardCertification">
+                        <a href="https://community.alteryx.com/t5/user/viewprofilepage/user-id/394981" target="_blank"
+                            class="cardCertificationLink">
+                            <img src="/Images/logo/alteryx-logo.png" data-hover="/Images/logo/alteryx-logo-black.png"
+                                alt="" class="imgCertificationLogo">
+                            <p class="textCertificationTitre montserrat-bold">Alteryx Foundation Micro-Credential</p>
+                            <p class="textCertificationTitre montserrat-semibold"> NOV 2022</p>
+                            <p class="textCertificationDescription montserrat-regular">Introduction complète à
+                                JavaScript dans le cadre du développement Web</p>
+                            <p class="textCertificationFin montserrat-regular">Accéder à la certification</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="Section5" class="Section">
+                <h2 class="montserrat-bold">Projets</h2>
+                <p class="montserrat-regular">
+                    Les projets sont regroupées par type, vous pouvez cliquer sur chaque projet afin d'avoir un aperçu
+                    plus détaillé.
+                </p>
+                <p class="montserrat-semibold projetText">Projet de Data Science :</p>
+
+                <div class="carousel-container">
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track">
+                            <div class="cardProjet">
+                                <p class="cardProjetTitre">Estimateur des prix immobilier </p>
+                                <p class="cardProjetParagraphe"> C’est un outil web développé pour simplifier les appels
+                                    API. Il permet de récupérer facilement des données comme les DPE d’une adresse ou
+                                    des informations sur un SIRET, soit en saisissant directement les informations, soit
+                                    en envoyant un fichier pour un traitement en batch. </p>
+                                <div class="cardProjetBottom">
+                                    <a href="Documents/Projet Machine Learning.pdf" class="cardProjetButtonLink" target="_blank">
+                                    <button class="cardProjetButton montserrat-bold">Consulter le site</button>
+                                    </a>
+                                    <img src="/Images/projet/projet-site-dpe/1-gray.png" alt="" class="cardProjetImage">
+                                
+                                </div>
+                            </div>
+                            <div class="cardProjet">Carte 2</div>
+                            <div class="cardProjet">Carte 3</div>
+                            <div class="cardProjet">Carte 3</div>
+                            <div class="cardProjet">Carte 3</div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next">&#10095;</button>
+                    <div class="carousel-dots"></div>
+                </div>
+
+                <p class="montserrat-semibold projetText"> Analyse de données : </p>
+
+                <div class="carousel-container">
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track">
+                                                        <div class="cardProjet">
+                                <p class="cardProjetTitre">Tableaux de Bord - Deezer </p>
+                                <p class="cardProjetParagraphe"> C’est un outil web développé pour simplifier les appels
+                                    API. Il permet de récupérer facilement des données comme les DPE d’une adresse ou
+                                    des informations sur un SIRET, soit en saisissant directement les informations, soit
+                                    en envoyant un fichier pour un traitement en batch. </p>
+                                <div class="cardProjetBottom">
+                                    <a href="https://www.linkedin.com/posts/emilien-sezestre-26b610193_bonjour-je-suis-ravi-de-partager-mon-dernier-activity-7160889977772404737-FW9T/" class="cardProjetButtonLink" target="_blank">
+                                    <button class="cardProjetButton montserrat-bold">Consulter le site</button>
+                                    </a>
+                                    <img src="/Images/projet/projet-site-dpe/1-gray.png" alt="" class="cardProjetImage">
+                                
+                                </div>
+                            </div>
+                            <div class="cardProjet">Carte 2</div>
+                            <div class="cardProjet">Carte 3</div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next">&#10095;</button>
+                    <div class="carousel-dots"></div>
+                </div>
+
+                <p class="montserrat-semibold projetText">Projet Web :</p>
+
+                <div class="carousel-container">
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track">
+                            <div class="cardProjet">
+                                <p class="cardProjetTitre">Site Web Traitement </p>
+                                <p class="cardProjetParagraphe"> C’est un outil web développé pour simplifier les appels
+                                    API. Il permet de récupérer facilement des données comme les DPE d’une adresse ou
+                                    des informations sur un SIRET, soit en saisissant directement les informations, soit
+                                    en envoyant un fichier pour un traitement en batch. </p>
+                                <div class="cardProjetBottom">
+                                    <a href="https://emiliensez.github.io/dpe-batiroc/" class="cardProjetButtonLink" target="_blank">
+                                    <button class="cardProjetButton montserrat-bold">Consulter le site</button>
+                                    </a>
+                                    <img src="/Images/projet/projet-site-dpe/1-gray.png" alt="" class="cardProjetImage">
+                                
+                                </div>
+                            </div>
+                            <div class="cardProjet">
+                                <p class="cardProjetTitre">Cartographie des risques climatiques</p>
+                                <p class="cardProjetParagraphe"> C’est un outil web développé pour simplifier les appels
+                                    API. Il permet de récupérer facilement des données comme les DPE d’une adresse ou
+                                    des informations sur un SIRET, soit en saisissant directement les informations, soit
+                                    en envoyant un fichier pour un traitement en batch. </p>
+                                <div class="cardProjetBottom">
+                                    <a href="https://emiliensez.github.io/carto-risque-clim/" class="cardProjetButtonLink" target="_blank">
+                                    <button class="cardProjetButton montserrat-bold">Consulter le site</button>
+                                    </a>
+                                    <img src="/Images/projet/projet-site-dpe/1-gray.png" alt="" class="cardProjetImage">
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next">&#10095;</button>
+                    <div class="carousel-dots"></div>
+                </div>
+
+            </div>
+
+            <p style="padding-bottom: 95.0vh; font-size: 1.25vh;" id="copyrightMessage"></p>
+
+        </div>
+
+        <div id="LeftPanel">
+
+            <h1 class="montserrat-bold">Sezestre Emilien</h1>
+            <h2 class="montserrat-bold">Data Analyst / Scientist</h2>
+            <p class="montserrat-regular">Developpeur Junior ayant une formation en <br> Ingénierie des données,
+                Econométrie & Statistiques <br> et
+                une passion pour le développement.</p>
+
+            <nav class="NavContainer montserrat-regular">
+
+                <div class="NavItem" DataSection="Section1">
+                    <div class="NavItemDot"></div>
+                    <span class="NavItemText">Experience</span>
+                </div>
+
+                <div class="NavItem" DataSection="Section2">
+                    <div class="NavItemDot"></div>
+                    <span class="NavItemText">Stack technique</span>
+                </div>
+
+                <div class="NavItem" DataSection="Section3">
+                    <div class="NavItemDot"></div>
+                    <span class="NavItemText">Formation</span>
+                </div>
+
+                <div class="NavItem" DataSection="Section4">
+                    <div class="NavItemDot"></div>
+                    <span class="NavItemText">Certification</span>
+                </div>
+
+                <div class="NavItem" DataSection="Section5">
+                    <div class="NavItemDot"></div>
+                    <span class="NavItemText">Projets</span>
+                </div>
+
+            </nav>
+
+            <div id="SocialsContainer">
+
+                <a href="https://github.com/EmilienSez" target="_blank" title="Github">
+                    <img src="Images/GithubIcon.png" alt="Github" style="width:30px;height:30px;">
+                </a>
+
+                <!-- <a href="mailto:emilien.sezestre@gmail.com" target="_blank" title="Email">
+                        <img src="Images/EmailIcon.png" alt="Email" style="width:30px;height:30px;">
+                    </a> -->
+
+                <a href="https://www.linkedin.com/in/emilien-sezestre-26b610193/" target="_blank" title="CV">
+                    <img src="Images/LinkedinIcon.png" alt="CV" style="width:30px;height:30px;">
+                </a>
+
+                <a href="Documents/CV - Sezestre Emilien 2024-2025 - PM.pdf" target="_blank" title="CV">
+                    <img src="Images/CVIcon.png" alt="CV" style="width:30px;height:30px;">
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <audio id="ComputerBoot" src="Sounds/ComputerBoot.mp3"></audio>
+    <audio id="ComputerAmbient" src="Sounds/ComputerAmbient.mp3"></audio>
+    <audio id="ComputerBeep" src="Sounds/ComputerBeep.mp3"></audio>
+    <audio id="KeyboardPressed" src="Sounds/KeyboardPressed.mp3"></audio>
+
+    <script src="Scripts/AjoutES.js"></script>
+    <script src="Scripts/ModelFiles.js"></script>
+    <script src="Scripts/RenderingFunctions.js"></script>
+    <!-- <script src="Scripts/TerminalFunction.js"></script> -->
+    <script src="Scripts/Main.js"></script>
+
+</body>
+
+</html>

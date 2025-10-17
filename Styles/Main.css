@@ -424,6 +424,16 @@ m {
     transition: color 0.3s ease;
 }
 
+#So {
+    position: absolute;
+    top: 85vh;
+    transform: translateY(-100%);
+
+    display: flex;
+    justify-content: flex-start;
+    gap: 2.5vh;
+}
+
 #SocialsContainer {
     position: absolute;
     top: 80vh;

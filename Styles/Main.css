@@ -632,19 +632,29 @@ m {
 }
 
 .cardProjetTitre {
-    margin: 0;
-    font-size: 1.5rem;
+    margin: 10px 0 0 0;
+    font-size: 1.2rem;
     font-weight: bold;
+    color:white;
 }
 
 .cardProjetParagraphe {
-    margin: 10px 0 0 0;
+    margin: 5px 5px 0 5px;
     flex-grow: 1; /* prend l’espace restant pour pousser le bas */
+}
+
+.cardProjetTop {
+    position: relative;
+    height: 58%; /* 40% de la carte */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* bouton au-dessus de l'image */
+    align-items: center;
 }
 
 .cardProjetBottom {
     position: relative;
-    height: 40%; /* 40% de la carte */
+    height: 42%; /* 40% de la carte */
     display: flex;
     flex-direction: column;
     justify-content: flex-end; /* bouton au-dessus de l'image */
@@ -672,7 +682,7 @@ m {
 .cardProjetImage {
     width: 100%;
     height: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
     /* border-radius: 25px; */
     object-fit: cover;
 }

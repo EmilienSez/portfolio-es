@@ -1,9 +1,10 @@
 # TO-DO
-- Ajouter inspiré par.....
-- Changer le curseur en point
-- Changer les texte pour les certifications
-- Rajouter les projets
-- Ajouter un logo dans la barre en haut
-- Projet à Ajouter : 
-  - Les déterminants du bohneur national
--
+
+## Idée supplémentaire de fonctionnalité
+- Ajout d'un son de transition quand on clique sur le sommaire
+- Faire en sorte de gérer l'affichage sur téléphone
+
+## Sujet globale D'amélioration : 
+- Passer dans un framework type React
+- Créer des petits fichiers HTML pour chaque partie pour rendre plus lisible index.html
+- Créer un JSON qui stockerait l'ensemble des données que j'utilise dans le projet afin de faire des modifications plus facilement.

@@ -2,8 +2,11 @@ const cards = document.querySelectorAll('.STImgcardLogo');
 const copyrightMessage = document.getElementById('copyrightMessage');
 const cardsCertification = document.querySelectorAll('.cardCertification');
 const currentYear = new Date().getFullYear();
+// Message de copytright
 copyrightMessage.textContent = `© Copyright ${currentYear} Sezestre Emilien`;
 
+
+// Changement en version noir des images 
 cards.forEach(card => {
     const img = card.querySelector('.STImgLogo');
     const originalSrc = img.src;
@@ -18,6 +21,7 @@ cards.forEach(card => {
     });
 });
 
+// Changement en version noir des images 
 cardsCertification.forEach(card => {
     const img = card.querySelector('.imgCertificationLogo');
     const originalSrc = img.src;
@@ -32,6 +36,8 @@ cardsCertification.forEach(card => {
     });
 });
 
+
+// Gestion du Carousel : 
 document.querySelectorAll('.carousel-container').forEach(container => {
     const track = container.querySelector('.carousel-track');
     const nextButton = container.querySelector('.next');
@@ -47,6 +53,7 @@ document.querySelectorAll('.carousel-container').forEach(container => {
         else {
             const dot = document.createElement('div');
             dot.classList.add('carousel-dot');
+            dot.classList.add('clickable');
             if (i === 0) dot.classList.add('active');
             dotsContainer.appendChild(dot);
 
@@ -111,3 +118,33 @@ document.querySelectorAll('.carousel-container').forEach(container => {
     });
 });
 
+// Gestion du curseur : 
+const cursor = document.getElementById('custom-cursor');
+const cursordot = document.getElementById('cursor-dot');
+
+// Tous les éléments cliquables
+const clickableElements = document.querySelectorAll('a, button, .clickable');
+
+document.addEventListener('mousemove', e => {
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+});
+
+// Quand on survole un élément cliquable
+clickableElements.forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursor.style.borderRadius = '50%'; 
+    cursor.style.width = '24px';      
+    cursor.style.height = '24px';
+    cursor.style.borderColor = '#D97D55';
+    cursordot.style.backgroundColor = '#D97D55';
+  });
+  el.addEventListener('mouseleave', () => {
+    cursor.style.borderRadius = '50%'; 
+    cursor.style.width = '12px';
+    cursor.style.height = '12px';
+    cursor.style.borderColor = 'white';
+    cursordot.style.backgroundColor = 'white';
+    // cursor.style.backgroundColor = 'white';
+  });
+});

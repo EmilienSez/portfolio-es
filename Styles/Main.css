@@ -3,6 +3,39 @@ body {
     height: 100%;
     overflow: hidden;
     font-family: Arial, sans-serif;
+    cursor: none;
+}
+
+a {
+    cursor:none;
+}
+
+#custom-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 12px;         /* diamètre du cercle externe */
+  height: 12px;
+  border: 2px solid white;  /* cercle non rempli */
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: width 1s ease, height 1s ease, border-radius 1s ease, background-color 1s ease;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cursor-dot {
+  width: 12px;     /* taille du point central */
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 canvas {
@@ -29,7 +62,7 @@ canvas {
     border-radius: 50%;
 
     transition: font-size 0.15s ease, transform 0.25s ease;
-    cursor: pointer;
+    cursor: none;
 }
 
 #MainButton:hover {
@@ -155,6 +188,15 @@ h2 {
 .EPDescription {
     font-size: 1.6vh;
     margin: 0 0 1vh 0;
+    line-height: 1.5;
+    color: grey;
+    font-weight: normal;
+    pointer-events: auto;
+}
+
+.EPClassement {
+    font-size: 1.6vh;
+    margin: 0 0 0 0;
     color: grey;
     font-weight: normal;
     pointer-events: auto;
@@ -164,6 +206,7 @@ h2 {
     font-size: 1.6vh;
     margin: 0 0 1vh 0;
     margin-left: 2vh;
+    line-height: 1.5;
     color: grey;
     font-weight: normal;
     pointer-events: auto;
@@ -194,7 +237,7 @@ h2 {
     /* coins arrondis */
     padding: 10px 20px;
     /* taille du bouton */
-    cursor: pointer;
+    cursor: none;
     transition: all 0.3s ease;
     /* transition douce */
 }
@@ -270,7 +313,7 @@ h2 {
     height: 40vh;
     margin: 10px 10px 10px 10px;
     border-radius: 25px;
-    cursor: pointer;
+    cursor: none;
     transition: all 0.5s ease;
 }
 
@@ -278,8 +321,8 @@ h2 {
     display: flex;
     /*image à côté du texte*/
     display: inline-block;
-    width: 8vh;
-    height: 8vh;
+    width: 7vh;
+    height: 7vh;
     object-fit: scale-down;
     /* garde les proportions et recadre si nécessaire */
     padding: 5%;
@@ -296,6 +339,7 @@ h2 {
     transform: translateY(-5px);
     /* la carte “monte” légèrement */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor:none;
     /* ombre plus marquée */
     ;
 }
@@ -320,7 +364,7 @@ h2 {
 .textCertificationDescription {
     font-size: 1.4vh;
     text-align: center;
-    margin: 0 0 1vh 0;
+    margin: 0 5px 0 5px;
     color: grey;
     font-weight: normal;
     pointer-events: auto;
@@ -357,6 +401,7 @@ h2 {
     justify-content: flex-end;
     /* aligne à droite */
     align-items: center;
+    cursor:none;
     /* centre verticalement */
 }
 
@@ -385,7 +430,7 @@ m {
     display: flex;
     align-items: center;
     margin: 20px 0;
-    cursor: pointer;
+    cursor: none;
     pointer-events: auto;
 }
 
@@ -569,7 +614,7 @@ m {
     height: 40vh;
     margin: 10px;
     border-radius: 25px;
-    cursor: pointer;
+    cursor: none;
     transition: all 0.5s ease;
     overflow: hidden;
 }
@@ -583,7 +628,7 @@ m {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    cursor: pointer;
+    cursor: none;
     color:white;
     background: none;
     border:none;
@@ -615,7 +660,7 @@ m {
     border-radius: 50%;
     background-color: gray;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    cursor: pointer;
+    cursor: none;
 }
 
 .carousel-dot.active {
@@ -669,7 +714,7 @@ m {
     border-radius: 10px;
     padding: 8px 15px;
     margin-bottom: 10px;
-    cursor: pointer;
+    cursor: none;
     transition: background 0.3s ease, transform 0.2s ease;
 }
 

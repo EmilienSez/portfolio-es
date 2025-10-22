@@ -67,7 +67,7 @@ document.querySelectorAll('.carousel-container').forEach(container => {
                 else {
                     prevButton.style.display = 'block';
                 }
-                if (index == cards.length-2) {
+                if (index == cards.length - 2) {
                     nextButton.style.display = 'none';
                 }
                 else {
@@ -94,13 +94,13 @@ document.querySelectorAll('.carousel-container').forEach(container => {
 
     nextButton.addEventListener('click', () => {
         const visibleCards = Math.floor(container.offsetWidth / cards[0].offsetWidth);
-         if (index < cards.length - visibleCards) {
+        if (index < cards.length - visibleCards) {
             if (index == 0) {
                 prevButton.style.display = 'block';
             }
             index++;
             updateCarousel();
-            if (index == cards.length-2) {
+            if (index == cards.length - 2) {
                 nextButton.style.display = 'none';
             }
         }
@@ -126,25 +126,246 @@ const cursordot = document.getElementById('cursor-dot');
 const clickableElements = document.querySelectorAll('a, button, .clickable');
 
 document.addEventListener('mousemove', e => {
-  cursor.style.left = e.clientX + 'px';
-  cursor.style.top = e.clientY + 'px';
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
 });
 
 // Quand on survole un élément cliquable
 clickableElements.forEach(el => {
-  el.addEventListener('mouseenter', () => {
-    cursor.style.borderRadius = '50%'; 
-    cursor.style.width = '24px';      
-    cursor.style.height = '24px';
-    cursor.style.borderColor = '#D97D55';
-    cursordot.style.backgroundColor = '#D97D55';
-  });
-  el.addEventListener('mouseleave', () => {
-    cursor.style.borderRadius = '50%'; 
-    cursor.style.width = '12px';
-    cursor.style.height = '12px';
-    cursor.style.borderColor = 'white';
-    cursordot.style.backgroundColor = 'white';
-    // cursor.style.backgroundColor = 'white';
-  });
+    el.addEventListener('mouseenter', () => {
+        cursor.style.borderRadius = '50%';
+        cursor.style.width = '24px';
+        cursor.style.height = '24px';
+        cursor.style.borderColor = '#D97D55';
+        cursordot.style.backgroundColor = '#D97D55';
+    });
+    el.addEventListener('mouseleave', () => {
+        cursor.style.borderRadius = '50%';
+        cursor.style.width = '12px';
+        cursor.style.height = '12px';
+        cursor.style.borderColor = 'white';
+        cursordot.style.backgroundColor = 'white';
+        // cursor.style.backgroundColor = 'white';
+    });
 });
+
+
+
+// Gestion du Carousel 2 : 
+// document.querySelectorAll('.carousel-containera').forEach(container => {
+//     const track = container.querySelector('.carousel-tracka');
+//     const nextButton = container.querySelector('.next');
+//     const prevButton = container.querySelector('.prev');
+//     const cards = container.querySelectorAll('.cardProjeta');
+//     const dotsContainer = container.querySelector('.carousel-dots');
+
+//     let index = 0;
+
+//     // --- Création dynamique des "dots"
+//     cards.forEach((_, i) => {
+//         // if (window.matchMedia("(max-width: 1215px)").matches) {
+//         if (i + 1 == cards.length);
+//         else {
+//             const dot = document.createElement('div');
+//             dot.classList.add('carousel-dot');
+//             dot.classList.add('clickable');
+//             if (i === 0) dot.classList.add('active');
+//             dotsContainer.appendChild(dot);
+
+//             // clic sur un dot = aller directement à la carte correspondante
+//             dot.addEventListener('click', () => {
+//                 index = i;
+//                 updateCarousel();
+//                 if (index == 0) {
+//                     prevButton.style.display = 'none';
+//                 }
+//                 else {
+//                     prevButton.style.display = 'block';
+//                 }
+//                 if (index == cards.length - 2) {
+//                     nextButton.style.display = 'none';
+//                 }
+//                 else {
+//                     nextButton.style.display = 'block';
+//                 }
+//             });
+//         }
+//     });
+//     if (cards.length <= 2) {
+//         // dotsContainer.style.display = 'none';
+//         nextButton.style.display = 'none';
+//         prevButton.style.display = 'none';
+//     }
+//     const dots = dotsContainer.querySelectorAll('.carousel-dot');
+//     prevButton.style.display = 'none';
+
+//     function updateCarousel() {
+//         // const visibleCards = container.offsetWidth / (cards[0].offsetWidth);
+//         // const offset = index * (cards[0].offsetWidth) ;
+//         track.style.transform = `translateX(-${cards[index].offsetLeft}px)`;
+//         dots.forEach(dot => dot.classList.remove('active'));
+//         if (dots[index]) dots[index].classList.add('active');
+//     }
+
+//     nextButton.addEventListener('click', () => {
+//         const visibleCards = Math.floor(container.offsetWidth / cards[0].offsetWidth);
+//         if (index < cards.length - visibleCards) {
+//             if (index == 0) {
+//                 prevButton.style.display = 'block';
+//             }
+//             index++;
+//             updateCarousel();
+//             if (index == cards.length - 2) {
+//                 nextButton.style.display = 'none';
+//             }
+//         }
+//     });
+
+//     prevButton.addEventListener('click', () => {
+//         if (index > 0) {
+//             index--;
+//             updateCarousel();
+//             nextButton.style.display = 'block';
+//             if (index == 0) {
+//                 prevButton.style.display = 'none';
+//             }
+//         }
+//     });
+// });
+
+
+const mediaQuery = window.matchMedia("(max-width: 1215px)");
+
+function handleResize(e) {
+    if (e.matches) {
+        console.log("On vient de passer sous 1215px !");
+        document.querySelectorAll('.carousel-containera').forEach(container => {
+            const track = container.querySelector('.carousel-tracka');
+            const nextButton = container.querySelector('.next');
+            const prevButton = container.querySelector('.prev');
+            const cards = container.querySelectorAll('.cardProjeta');
+            const dotsContainer = container.querySelector('.carousel-dots');
+
+            let index = 0;
+            dotsContainer.innerHTML = '';
+            prevButton.style.display = 'none';
+            nextButton.style.display = 'none';
+            // --- Création dynamique des "dots"
+            cards.forEach((_, i) => {
+                // if (window.matchMedia("(max-width: 1215px)").matches) {
+                if (i == cards.length);
+                else {
+                    const dot = document.createElement('div');
+                    dot.classList.add('carousel-dot');
+                    dot.classList.add('clickable');
+                    if (i === 0) dot.classList.add('active');
+                    dotsContainer.appendChild(dot);
+
+                    // clic sur un dot = aller directement à la carte correspondante
+                    dot.addEventListener('click', () => {
+                        index = i;
+                        updateCarousel();
+
+                    });
+                }
+            });
+            const dots = dotsContainer.querySelectorAll('.carousel-dot');
+            prevButton.style.display = 'none';
+
+            function updateCarousel() {
+                // const visibleCards = container.offsetWidth / (cards[0].offsetWidth);
+                // const offset = index * (cards[0].offsetWidth) ;
+                track.style.transform = `translateX(-${cards[index].offsetLeft}px)`;
+                dots.forEach(dot => dot.classList.remove('active'));
+                if (dots[index]) dots[index].classList.add('active');
+            }
+        });
+    } else {
+        console.log("On vient de repasser au-dessus de 1215px !");
+        document.querySelectorAll('.carousel-containera').forEach(container => {
+            const track = container.querySelector('.carousel-tracka');
+            const nextButton = container.querySelector('.next');
+            const prevButton = container.querySelector('.prev');
+            const cards = container.querySelectorAll('.cardProjeta');
+            const dotsContainer = container.querySelector('.carousel-dots');
+
+            let index = 0;
+            dotsContainer.innerHTML = '';
+            // --- Création dynamique des "dots"
+            cards.forEach((_, i) => {
+                // if (window.matchMedia("(max-width: 1215px)").matches) {
+                if (i + 1 == cards.length);
+                else {
+                    const dot = document.createElement('div');
+                    dot.classList.add('carousel-dot');
+                    dot.classList.add('clickable');
+                    if (i === 0) dot.classList.add('active');
+                    dotsContainer.appendChild(dot);
+
+                    // clic sur un dot = aller directement à la carte correspondante
+                    dot.addEventListener('click', () => {
+                        index = i;
+                        updateCarousel();
+                        if (index == 0) {
+                            prevButton.style.display = 'none';
+                        }
+                        else {
+                            prevButton.style.display = 'block';
+                        }
+                        if (index == cards.length - 2) {
+                            nextButton.style.display = 'none';
+                        }
+                        else {
+                            nextButton.style.display = 'block';
+                        }
+                    });
+                }
+            });
+            if (cards.length <= 2) {
+                // dotsContainer.style.display = 'none';
+                nextButton.style.display = 'none';
+                prevButton.style.display = 'none';
+            }
+            const dots = dotsContainer.querySelectorAll('.carousel-dot');
+            prevButton.style.display = 'none';
+
+            function updateCarousel() {
+                // const visibleCards = container.offsetWidth / (cards[0].offsetWidth);
+                // const offset = index * (cards[0].offsetWidth) ;
+                track.style.transform = `translateX(-${cards[index].offsetLeft}px)`;
+                dots.forEach(dot => dot.classList.remove('active'));
+                if (dots[index]) dots[index].classList.add('active');
+            }
+
+            nextButton.addEventListener('click', () => {
+                const visibleCards = Math.floor(container.offsetWidth / cards[0].offsetWidth);
+                if (index < cards.length - visibleCards) {
+                    if (index == 0) {
+                        prevButton.style.display = 'block';
+                    }
+                    index++;
+                    updateCarousel();
+                    if (index == cards.length - 2) {
+                        nextButton.style.display = 'none';
+                    }
+                }
+            });
+
+            prevButton.addEventListener('click', () => {
+                if (index > 0) {
+                    index--;
+                    updateCarousel();
+                    nextButton.style.display = 'block';
+                    if (index == 0) {
+                        prevButton.style.display = 'none';
+                    }
+                }
+            });
+        });
+    }
+}
+
+mediaQuery.addEventListener("change", handleResize);
+
+// Et tu peux aussi vérifier au chargement :
+handleResize(mediaQuery);
